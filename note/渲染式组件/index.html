@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>渲染式组件 | LYFFFF 的博客呀</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="./public/logo.webp">
+    <meta name="description" content="道阻且长，勤能补拙">
+    
+    <link rel="preload" href="/assets/css/0.styles.9825735b.css" as="style"><link rel="preload" href="/assets/js/app.6530ad20.js" as="script"><link rel="preload" href="/assets/js/2.2defd20b.js" as="script"><link rel="preload" href="/assets/js/21.2cc40154.js" as="script"><link rel="prefetch" href="/assets/js/10.5b87f6f1.js"><link rel="prefetch" href="/assets/js/11.605e13b4.js"><link rel="prefetch" href="/assets/js/12.edb8b435.js"><link rel="prefetch" href="/assets/js/13.42c47d09.js"><link rel="prefetch" href="/assets/js/14.acae71de.js"><link rel="prefetch" href="/assets/js/15.c19c27bf.js"><link rel="prefetch" href="/assets/js/16.28ea1cb9.js"><link rel="prefetch" href="/assets/js/17.2323a2f9.js"><link rel="prefetch" href="/assets/js/18.94c1c8f9.js"><link rel="prefetch" href="/assets/js/19.1c94f1fe.js"><link rel="prefetch" href="/assets/js/20.ab9731c3.js"><link rel="prefetch" href="/assets/js/22.258a8bcb.js"><link rel="prefetch" href="/assets/js/3.934fae14.js"><link rel="prefetch" href="/assets/js/4.11957e18.js"><link rel="prefetch" href="/assets/js/5.e5b70a6f.js"><link rel="prefetch" href="/assets/js/6.4169e03e.js"><link rel="prefetch" href="/assets/js/7.c3602c94.js"><link rel="prefetch" href="/assets/js/8.f8905adf.js"><link rel="prefetch" href="/assets/js/9.8d9924b6.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9825735b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">LYFFFF 的博客呀</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Hmoe
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="笔记" class="dropdown-title"><span class="title">笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="笔记" class="mobile-dropdown-title"><span class="title">笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/note/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/note/正则表达式/" class="nav-link">
+  正则表达式
+</a></li><li class="dropdown-item"><!----> <a href="/note/客户端存储/" class="nav-link">
+  客户端存储
+</a></li><li class="dropdown-item"><!----> <a href="/note/模块化/" class="nav-link">
+  模块化
+</a></li><li class="dropdown-item"><!----> <a href="/note/渲染式组件/" class="nav-link">
+  渲染式组件
+</a></li><li class="dropdown-item"><!----> <a href="/note/原型和原型链/" class="nav-link">
+  原型和原型链
+</a></li><li class="dropdown-item"><!----> <a href="/note/组件传值/" class="nav-link">
+  组件传值
+</a></li><li class="dropdown-item"><!----> <a href="/note/Reflect/" class="nav-link">
+  Reflect
+</a></li><li class="dropdown-item"><!----> <a href="/note/Vue响应式原理/" class="nav-link">
+  Vue响应式原理
+</a></li><li class="dropdown-item"><!----> <a href="/note/VueRouter/" class="nav-link">
+  VueRouter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="关于" class="dropdown-title"><span class="title">关于</span> <span class="arrow down"></span></button> <button type="button" aria-label="关于" class="mobile-dropdown-title"><span class="title">关于</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/lyfffffff" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/LYFFFF_" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSND
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Hmoe
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="笔记" class="dropdown-title"><span class="title">笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="笔记" class="mobile-dropdown-title"><span class="title">笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/note/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/note/正则表达式/" class="nav-link">
+  正则表达式
+</a></li><li class="dropdown-item"><!----> <a href="/note/客户端存储/" class="nav-link">
+  客户端存储
+</a></li><li class="dropdown-item"><!----> <a href="/note/模块化/" class="nav-link">
+  模块化
+</a></li><li class="dropdown-item"><!----> <a href="/note/渲染式组件/" class="nav-link">
+  渲染式组件
+</a></li><li class="dropdown-item"><!----> <a href="/note/原型和原型链/" class="nav-link">
+  原型和原型链
+</a></li><li class="dropdown-item"><!----> <a href="/note/组件传值/" class="nav-link">
+  组件传值
+</a></li><li class="dropdown-item"><!----> <a href="/note/Reflect/" class="nav-link">
+  Reflect
+</a></li><li class="dropdown-item"><!----> <a href="/note/Vue响应式原理/" class="nav-link">
+  Vue响应式原理
+</a></li><li class="dropdown-item"><!----> <a href="/note/VueRouter/" class="nav-link">
+  VueRouter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="关于" class="dropdown-title"><span class="title">关于</span> <span class="arrow down"></span></button> <button type="button" aria-label="关于" class="mobile-dropdown-title"><span class="title">关于</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/lyfffffff" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/LYFFFF_" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSND
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/note/%E6%B8%B2%E6%9F%93%E5%BC%8F%E7%BB%84%E4%BB%B6/" aria-current="page" class="active sidebar-link">渲染式组件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/note/%E6%B8%B2%E6%9F%93%E5%BC%8F%E7%BB%84%E4%BB%B6/#渲染式组件" class="sidebar-link">渲染式组件</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="渲染式组件"><a href="#渲染式组件" class="header-anchor">#</a> 渲染式组件</h2> <p>包含 render、JSX、函数式组件。</p> <h3 id="render"><a href="#render" class="header-anchor">#</a> render</h3> <blockquote><p>render: (h) =&gt; h(
+nodeName: String,
+options?: Object,
+childrenNode?: String|Array&lt;[h(),...]&gt;
+)</p></blockquote> <p>返回一个 Vnode 是因为组件需要一个根节点。</p> <h4 id="options-的选项"><a href="#options-的选项" class="header-anchor">#</a> options 的选项</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+    <span class="token keyword">class</span><span class="token punctuation">,</span>
+    style<span class="token punctuation">,</span>
+    attrs<span class="token punctuation">,</span> <span class="token comment">// HTML attribute</span>
+    props<span class="token punctuation">,</span>
+    domProps<span class="token punctuation">,</span> <span class="token comment">// DOM 属性</span>
+    <span class="token literal-property property">on</span><span class="token operator">:</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment">// 事件监听，修饰符使用前缀替换</span>
+    nativeOn<span class="token punctuation">,</span> <span class="token comment">// 原生事件监听</span>
+    directives<span class="token punctuation">,</span>
+    <span class="token literal-property property">scopedSlots</span><span class="token operator">:</span><span class="token punctuation">{</span><span class="token function-variable function">name</span><span class="token operator">:</span><span class="token parameter">props</span><span class="token operator">=&gt;</span><span class="token function">h</span><span class="token punctuation">(</span><span class="token string">'span'</span><span class="token punctuation">,</span>props<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment">// 作用域插槽，子组件所传的数据被封装到 props 中。</span>
+    slot<span class="token punctuation">,</span>
+    key<span class="token punctuation">,</span>
+    ref<span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>Tips：HTML attribute 和 DOM prototype 的区别</strong>
+一个是在 html 标签上定义的属性集合，一个是通过 querySelect/getElement 获取 html 的 DOM 对象的属性集合。
+DOM 对象可以直接获取 html 上的常规特性（id，name 等）。
+对于不常规的属性，需使用 element.getAttribute() 获取，但是不一定是一一对应的。
+例如行内样式 style，DOM 对象获取的是 CSSStyleDeclaration 对象，getAttribute 获取的是样式字符串。</p> <div class="language-js extra-class"><pre class="language-js"><code>id<span class="token punctuation">.</span><span class="token function">getAttribute</span><span class="token punctuation">(</span><span class="token string">'style'</span><span class="token punctuation">)</span> <span class="token comment">// 'color:red'</span>
+id<span class="token punctuation">.</span>style <span class="token comment">// CSSStyleDeclaration</span>
+</code></pre></div><table><thead><tr><th>特性</th> <th>HTML Attribute</th> <th>DOM property</th></tr></thead> <tbody><tr><td>值</td> <td>为 null 和字符串</td> <td>任意类型</td></tr> <tr><td>大小写</td> <td>不区分</td> <td>严格区分</td></tr> <tr><td>未定义</td> <td>返回 null</td> <td>返回 undefined</td></tr> <tr><td>value 属性相互更新</td> <td>attribute 修改，property 修改</td> <td>property 修改，attribute 不修改</td></tr></tbody></table> <h4 id="插槽"><a href="#插槽" class="header-anchor">#</a> 插槽</h4> <p>子组件使用 render 函数渲染，插槽使用 this.$slots 和 this.$scopedSlots 获取。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">render</span><span class="token punctuation">(</span><span class="token parameter">h</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">h</span><span class="token punctuation">(</span><span class="token string">'div'</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$slots<span class="token punctuation">.</span>default<span class="token punctuation">)</span> <span class="token comment">// 渲染为 `&lt;div&gt;&lt;slot&gt;&lt;/slot&gt;&lt;/div&gt;`</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">render</span><span class="token punctuation">(</span><span class="token parameter">h</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">h</span><span class="token punctuation">(</span><span class="token string">'div'</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$scopedSlots<span class="token punctuation">.</span><span class="token function">default</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token literal-property property">text</span><span class="token operator">:</span><span class="token string">'i am son'</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// 渲染为 `&lt;div&gt;&lt;slot text=&quot;i am son&quot;&gt;&lt;/slot&gt;&lt;/div&gt;`</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>父组件使用 render 函数渲染，在 h 函数的 options 中使用 scopedSlots 渲染，props 为子组件所传的作用域。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">render</span><span class="token punctuation">(</span><span class="token parameter">h</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">h</span><span class="token punctuation">(</span><span class="token string">'div'</span><span class="token punctuation">,</span><span class="token punctuation">[</span> <span class="token function">h</span><span class="token punctuation">(</span> child<span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token literal-property property">scopedSlots</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token function-variable function">default</span><span class="token operator">:</span> <span class="token parameter">props</span> <span class="token operator">=&gt;</span> <span class="token function">h</span><span class="token punctuation">(</span><span class="token string">'span'</span><span class="token punctuation">,</span><span class="token string">'i am farther give'</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span> 
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="jsx"><a href="#jsx" class="header-anchor">#</a> JSX</h3> <p>render 一个一个写标签太繁琐了，故推出了 JSX，在 vue 中内置了 JSX，可以直接使用。</p> <p>且 render 自行判断写的是何种渲染函数。</p> <p>在 JSX 中当遇到 &lt;，JSX 就当 HTML 解析，遇到 { 就当 JavaScript 解析。</p> <p>JSX 很像 vue，但是有几点不同：</p> <p>事件绑定变为驼峰写法，变量使用 { + this 绑定，例如 v-model/v-on=&quot;num&quot; -&gt; vModel/vOn={this.num}，</p> <p>可以直接在标签上写表达式，</p> <p>render 函数返回一个 html 模板，对于标签、文本等基础内容直接使用。</p> <h3 id="函数式组件"><a href="#函数式组件" class="header-anchor">#</a> 函数式组件</h3> <p>有些组件，仅用于展示和外部定义，由调用时所绑定的事件和数据定义细节，没有 data，this，生命周期，watch、computed、methods，称为函数式组件。</p> <p>函数式组件有两种写法，一是在 template 中添加 functional，</p> <p>一是在 script 添加 functional 属性为 true，且使用 render 渲染组件。</p> <p>函数式组件下的 render 函数，除了参数 h 外，还多了一个 context，表示本组件的上下文，即指代 this。</p> <p>可以使用 JSX，也可以使用 h 函数渲染。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token literal-property property">context</span><span class="token operator">:</span><span class="token punctuation">{</span>
+    props<span class="token punctuation">,</span> <span class="token comment">// props 对象</span>
+    chilren<span class="token punctuation">,</span> <span class="token comment">// 子节点数组，表示使用该组件时，插入组件的元素 [VNode,...]，值为 this.$slots.default + 非作用域插槽</span>
+    slots<span class="token punctuation">,</span> <span class="token comment">// 函数，调用返回插槽，当然也无法获取作用域插槽，和子节点数组很像，不过是有命名的对象 {default:[VNode,VNode],other:[VNode]}</span>
+    scopedSlots<span class="token punctuation">,</span> <span class="token comment">// 等同于 render 中的 this.$scopedSlots </span>
+    data<span class="token punctuation">,</span> <span class="token comment">// 所有数据</span>
+    parent<span class="token punctuation">,</span> <span class="token comment">// 父组件</span>
+    listeners<span class="token punctuation">,</span> <span class="token comment">// 父组件监听的事件</span>
+    injections<span class="token punctuation">,</span> <span class="token comment">// 在此组件 inject 的数据</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>函数式组件的使用</p> <div class="language-html extra-class"><pre class="language-html"><code>// far.vue
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Functional</span> <span class="token attr-name">text</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>functional text<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>1111<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">slot</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>test<span class="token punctuation">'</span></span> <span class="token attr-name">scoped-name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>son<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>{{son.name}} is this<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>2222<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Functional</span><span class="token punctuation">&gt;</span></span>
+
+// functional.vue
+export default {
+    functional: true,
+    props: {
+        text: {
+            type: String,
+        },
+    },
+    inject: [&quot;name&quot;],
+    /**
+     * 渲染函数
+     * @param {*} h
+     * @param {*} context 函数式组件没有this, props, slots 等都在 context 上
+     */
+    render(h, context) {
+        const { props, children, listeners, slots, scopedSlots, data } = context;
+        let slotList = slots(); // 所有插槽集合
+        return h(
+            &quot;div&quot;,
+            {
+                on: {
+                    click: listeners.click, // 父组件监听事件 click
+                },
+            },
+            [props.text, 
+            slotList.default,
+            scopedSlots.test({name:'testName'}),
+            children]
+        );
+    },
+};
+
+// 最后渲染为
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    functional text
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>1111<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>2222<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>testName is this<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>1111<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>2222<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.6530ad20.js" defer></script><script src="/assets/js/2.2defd20b.js" defer></script><script src="/assets/js/21.2cc40154.js" defer></script>
+  </body>
+</html>
