@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>十四、DOM(文档对象模型) | LYFFFF 的博客呀</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="./public/logo.webp">
+    <meta name="description" content="道阻且长，勤能补拙">
+    
+    <link rel="preload" href="/assets/css/0.styles.9825735b.css" as="style"><link rel="preload" href="/assets/js/app.caadd38c.js" as="script"><link rel="preload" href="/assets/js/2.2defd20b.js" as="script"><link rel="preload" href="/assets/js/31.575e2c13.js" as="script"><link rel="prefetch" href="/assets/js/10.097aea1a.js"><link rel="prefetch" href="/assets/js/11.c2c5675c.js"><link rel="prefetch" href="/assets/js/12.c2622d7c.js"><link rel="prefetch" href="/assets/js/13.00665759.js"><link rel="prefetch" href="/assets/js/14.4659e7b2.js"><link rel="prefetch" href="/assets/js/15.c34835e2.js"><link rel="prefetch" href="/assets/js/16.1093532d.js"><link rel="prefetch" href="/assets/js/17.1fff1e75.js"><link rel="prefetch" href="/assets/js/18.9a84c05c.js"><link rel="prefetch" href="/assets/js/19.9837b8ba.js"><link rel="prefetch" href="/assets/js/20.0b8189fb.js"><link rel="prefetch" href="/assets/js/21.dc29329c.js"><link rel="prefetch" href="/assets/js/22.e4101b35.js"><link rel="prefetch" href="/assets/js/23.8a7bb0ad.js"><link rel="prefetch" href="/assets/js/24.01fb6d46.js"><link rel="prefetch" href="/assets/js/25.b102803a.js"><link rel="prefetch" href="/assets/js/26.f820b976.js"><link rel="prefetch" href="/assets/js/27.bf356171.js"><link rel="prefetch" href="/assets/js/28.23d385bd.js"><link rel="prefetch" href="/assets/js/29.b57552f4.js"><link rel="prefetch" href="/assets/js/3.f9cd476e.js"><link rel="prefetch" href="/assets/js/30.eb70eecb.js"><link rel="prefetch" href="/assets/js/32.bce33679.js"><link rel="prefetch" href="/assets/js/33.0bd8f6cb.js"><link rel="prefetch" href="/assets/js/34.f33fa1b5.js"><link rel="prefetch" href="/assets/js/35.9cabab55.js"><link rel="prefetch" href="/assets/js/36.770a3e3f.js"><link rel="prefetch" href="/assets/js/37.d0599fe3.js"><link rel="prefetch" href="/assets/js/38.7099a479.js"><link rel="prefetch" href="/assets/js/39.e9ee67e8.js"><link rel="prefetch" href="/assets/js/4.11957e18.js"><link rel="prefetch" href="/assets/js/40.cc0ea31c.js"><link rel="prefetch" href="/assets/js/41.87e19d2c.js"><link rel="prefetch" href="/assets/js/42.ffa0b4fc.js"><link rel="prefetch" href="/assets/js/43.0c185241.js"><link rel="prefetch" href="/assets/js/5.e5b70a6f.js"><link rel="prefetch" href="/assets/js/6.4169e03e.js"><link rel="prefetch" href="/assets/js/7.c3602c94.js"><link rel="prefetch" href="/assets/js/8.ec3ff6fe.js"><link rel="prefetch" href="/assets/js/9.48df350d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9825735b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">LYFFFF 的博客呀</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Hmoe
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="笔记" class="dropdown-title"><span class="title">笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="笔记" class="mobile-dropdown-title"><span class="title">笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/note/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/note/正则表达式/" class="nav-link">
+  正则表达式
+</a></li><li class="dropdown-item"><!----> <a href="/note/客户端存储/" class="nav-link">
+  客户端存储
+</a></li><li class="dropdown-item"><!----> <a href="/note/模块化/" class="nav-link">
+  模块化
+</a></li><li class="dropdown-item"><!----> <a href="/note/渲染式组件/" class="nav-link">
+  渲染式组件
+</a></li><li class="dropdown-item"><!----> <a href="/note/原型和原型链/" class="nav-link">
+  原型和原型链
+</a></li><li class="dropdown-item"><!----> <a href="/note/组件传值/" class="nav-link">
+  组件传值
+</a></li><li class="dropdown-item"><!----> <a href="/note/Reflect/" class="nav-link">
+  Reflect
+</a></li><li class="dropdown-item"><!----> <a href="/note/Vue响应式原理/" class="nav-link">
+  Vue响应式原理
+</a></li><li class="dropdown-item"><!----> <a href="/note/VueRouter/" class="nav-link">
+  VueRouter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="源码分析" class="dropdown-title"><span class="title">源码分析</span> <span class="arrow down"></span></button> <button type="button" aria-label="源码分析" class="mobile-dropdown-title"><span class="title">源码分析</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/code/clusterize源码/" class="nav-link">
+  clusterize源码
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="js高级设计4" class="dropdown-title"><span class="title">js高级设计4</span> <span class="arrow down"></span></button> <button type="button" aria-label="js高级设计4" class="mobile-dropdown-title"><span class="title">js高级设计4</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/js4/二、javascript/" class="nav-link">
+  二、javascript
+</a></li><li class="dropdown-item"><!----> <a href="/js4/三、语言语法/" class="nav-link">
+  三、语言语法
+</a></li><li class="dropdown-item"><!----> <a href="/js4/四、变量作用域和内存/" class="nav-link">
+  四、变量作用域和内存
+</a></li><li class="dropdown-item"><!----> <a href="/js4/五、基本引用类型/" class="nav-link">
+  五、基本引用类型
+</a></li><li class="dropdown-item"><!----> <a href="/js4/六、集合引用类型/" class="nav-link">
+  六、集合引用类型
+</a></li><li class="dropdown-item"><!----> <a href="/js4/七、迭代器与生成器/" class="nav-link">
+  七、迭代器与生成器
+</a></li><li class="dropdown-item"><!----> <a href="/js4/八、类和对象以及面向对象编程/" class="nav-link">
+  八、类和对象以及面向对象编程
+</a></li><li class="dropdown-item"><!----> <a href="/js4/九、代理和反射/" class="nav-link">
+  九、代理和反射
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十、函数/" class="nav-link">
+  十、函数
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十一、期约和异步函数/" class="nav-link">
+  十一、期约和异步函数
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十二、BOM/" class="nav-link">
+  十二、BOM
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十三、客户端检测/" class="nav-link">
+  十三、客户端检测
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十四、DOM/" class="nav-link">
+  十四、DOM
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十五、DOM 扩展/" class="nav-link">
+  十五、DOM 扩展
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十六、DOM2 和 DOM3/" class="nav-link">
+  十六、DOM2 和 DOM3
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十七、事件/" class="nav-link">
+  十七、事件
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十八、图形与Canvas/" class="nav-link">
+  十八、图形与Canvas
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十九、表单脚本/" class="nav-link">
+  十九、表单脚本
+</a></li><li class="dropdown-item"><!----> <a href="/js4/二十、JavaScript API/" class="nav-link">
+  二十、JavaScript API
+</a></li><li class="dropdown-item"><!----> <a href="/js4/二十五、客户端储存/" class="nav-link">
+  二十五、客户端储存
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="关于" class="dropdown-title"><span class="title">关于</span> <span class="arrow down"></span></button> <button type="button" aria-label="关于" class="mobile-dropdown-title"><span class="title">关于</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/lyfffffff" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/LYFFFF_" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSND
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Hmoe
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="笔记" class="dropdown-title"><span class="title">笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="笔记" class="mobile-dropdown-title"><span class="title">笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/note/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/note/正则表达式/" class="nav-link">
+  正则表达式
+</a></li><li class="dropdown-item"><!----> <a href="/note/客户端存储/" class="nav-link">
+  客户端存储
+</a></li><li class="dropdown-item"><!----> <a href="/note/模块化/" class="nav-link">
+  模块化
+</a></li><li class="dropdown-item"><!----> <a href="/note/渲染式组件/" class="nav-link">
+  渲染式组件
+</a></li><li class="dropdown-item"><!----> <a href="/note/原型和原型链/" class="nav-link">
+  原型和原型链
+</a></li><li class="dropdown-item"><!----> <a href="/note/组件传值/" class="nav-link">
+  组件传值
+</a></li><li class="dropdown-item"><!----> <a href="/note/Reflect/" class="nav-link">
+  Reflect
+</a></li><li class="dropdown-item"><!----> <a href="/note/Vue响应式原理/" class="nav-link">
+  Vue响应式原理
+</a></li><li class="dropdown-item"><!----> <a href="/note/VueRouter/" class="nav-link">
+  VueRouter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="源码分析" class="dropdown-title"><span class="title">源码分析</span> <span class="arrow down"></span></button> <button type="button" aria-label="源码分析" class="mobile-dropdown-title"><span class="title">源码分析</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/code/clusterize源码/" class="nav-link">
+  clusterize源码
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="js高级设计4" class="dropdown-title"><span class="title">js高级设计4</span> <span class="arrow down"></span></button> <button type="button" aria-label="js高级设计4" class="mobile-dropdown-title"><span class="title">js高级设计4</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/js4/二、javascript/" class="nav-link">
+  二、javascript
+</a></li><li class="dropdown-item"><!----> <a href="/js4/三、语言语法/" class="nav-link">
+  三、语言语法
+</a></li><li class="dropdown-item"><!----> <a href="/js4/四、变量作用域和内存/" class="nav-link">
+  四、变量作用域和内存
+</a></li><li class="dropdown-item"><!----> <a href="/js4/五、基本引用类型/" class="nav-link">
+  五、基本引用类型
+</a></li><li class="dropdown-item"><!----> <a href="/js4/六、集合引用类型/" class="nav-link">
+  六、集合引用类型
+</a></li><li class="dropdown-item"><!----> <a href="/js4/七、迭代器与生成器/" class="nav-link">
+  七、迭代器与生成器
+</a></li><li class="dropdown-item"><!----> <a href="/js4/八、类和对象以及面向对象编程/" class="nav-link">
+  八、类和对象以及面向对象编程
+</a></li><li class="dropdown-item"><!----> <a href="/js4/九、代理和反射/" class="nav-link">
+  九、代理和反射
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十、函数/" class="nav-link">
+  十、函数
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十一、期约和异步函数/" class="nav-link">
+  十一、期约和异步函数
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十二、BOM/" class="nav-link">
+  十二、BOM
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十三、客户端检测/" class="nav-link">
+  十三、客户端检测
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十四、DOM/" class="nav-link">
+  十四、DOM
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十五、DOM 扩展/" class="nav-link">
+  十五、DOM 扩展
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十六、DOM2 和 DOM3/" class="nav-link">
+  十六、DOM2 和 DOM3
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十七、事件/" class="nav-link">
+  十七、事件
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十八、图形与Canvas/" class="nav-link">
+  十八、图形与Canvas
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十九、表单脚本/" class="nav-link">
+  十九、表单脚本
+</a></li><li class="dropdown-item"><!----> <a href="/js4/二十、JavaScript API/" class="nav-link">
+  二十、JavaScript API
+</a></li><li class="dropdown-item"><!----> <a href="/js4/二十五、客户端储存/" class="nav-link">
+  二十五、客户端储存
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="关于" class="dropdown-title"><span class="title">关于</span> <span class="arrow down"></span></button> <button type="button" aria-label="关于" class="mobile-dropdown-title"><span class="title">关于</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/lyfffffff" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/LYFFFF_" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSND
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/js4/%E5%8D%81%E5%9B%9B%E3%80%81DOM/" aria-current="page" class="active sidebar-link">十四、DOM</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/js4/%E5%8D%81%E5%9B%9B%E3%80%81DOM/#十四、dom-文档对象模型" class="sidebar-link">十四、DOM(文档对象模型)</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="十四、dom-文档对象模型"><a href="#十四、dom-文档对象模型" class="header-anchor">#</a> 十四、DOM(文档对象模型)</h2> <p>DOM 由节点构成的层级结构，类似于一颗树，通常为 HTML 和 XML 文档。</p> <p>document 表示文档的根节点，其包含一个子节点，在 html 中为标签 <code>&lt;html&gt;</code> , 称为文档元素，一个文档只有一个文档元素。</p> <h3 id="node-类型"><a href="#node-类型" class="header-anchor">#</a> Node 类型</h3> <p>文档中任意节点都有 Node 类型的特性，即拥有 Node 属性。</p> <p>someNode.nodeType 表示节点类型，为一个常数（1-12），与 Node.ELEMENT_NODE 等属性相对应、nodeName 表示节点名称、nodeValue 表示节点信息，一般来说元素节点该属性为 null.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">(</span>divNode<span class="token punctuation">.</span>nodeType <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">==</span> Node<span class="token punctuation">.</span><span class="token constant">ELEMENT_NODE</span><span class="token punctuation">;</span>
+divNode<span class="token punctuation">.</span>nodeName <span class="token operator">==</span> <span class="token string">&quot;DIV&quot;</span><span class="token punctuation">;</span>
+</code></pre></div><h4 id="节点关系"><a href="#节点关系" class="header-anchor">#</a> 节点关系</h4> <p>一般是父子、兄弟，获取一个节点的子节点集使用 childNodes，返回一个有 length 属性的类数组，可以使用 item(index)和[index]的形式访问子节点。</p> <p>获取一个节点的父节点使用 parentNode。</p> <p>获取兄弟节点使用 nextSibling 和 previousSibling，当自己作为兄长时，previousSibling 为 null，当自己作为幼弟时，nextSibling 为 null。</p> <p>当父节点想要获取大儿子和小儿子时，使用 firstChild 和 lastChild.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> childs <span class="token operator">=</span> divNode<span class="token punctuation">.</span>childNodes<span class="token punctuation">;</span>
+childs<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">==</span> childs<span class="token punctuation">.</span><span class="token function">item</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+childs<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+childs<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>parentNode <span class="token operator">==</span> divNode<span class="token punctuation">;</span>
+</code></pre></div><h4 id="操纵节点"><a href="#操纵节点" class="header-anchor">#</a> 操纵节点</h4> <p>即每个节点的属性方法，someNode.xxx()。</p> <p>也就是节点的增删改查，一般操作的是某个节点的子节点，将新节点作为参数传入方法中。</p> <p>appendChild(newNode)、removeChild(newNode)、replaceChild(newNode)、insertBefore(newNode)。</p> <p>还有两个较少使用的方法 cloneNode()，传入一个 Boolean 值参数，表示是否深克隆节点。</p> <p>和 normalize()，操作后代节点中的文本节点，文本节点为空时，进行移除。</p> <h3 id="documnet-类型"><a href="#documnet-类型" class="header-anchor">#</a> Documnet 类型</h3> <p>指代整体页面，其中一个子节点表示 html 标签，使用 document.documentElement 获取。</p> <p>另一个虽不是子节点，但也可以直接获取，document.body 表示 body 标签。</p> <h4 id="常见属性"><a href="#常见属性" class="header-anchor">#</a> 常见属性</h4> <h3 id="element-类型"><a href="#element-类型" class="header-anchor">#</a> Element 类型</h3> <p>元素节点</p> <h3 id="text-类型"><a href="#text-类型" class="header-anchor">#</a> Text 类型</h3> <p>文本节点</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> comment <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createTextNode</span><span class="token punctuation">(</span><span class="token string">&quot;A comment&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 创建注释节点</span>
+</code></pre></div><h3 id="comment-类型"><a href="#comment-类型" class="header-anchor">#</a> Comment 类型</h3> <p>注释节点， </p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> comment <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createComment</span><span class="token punctuation">(</span><span class="token string">&quot;A comment&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 创建注释节点</span>
+</code></pre></div><h3 id="documentfragment-类型"><a href="#documentfragment-类型" class="header-anchor">#</a> DocumentFragment 类型</h3> <p>虚拟仓库，可用于暂时放置节点，避免多次渲染页面</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> fragment <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createDocumentFragment</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 创建 DocumentFragment 节点</span>
+</code></pre></div><h3 id="documenttype"><a href="#documenttype" class="header-anchor">#</a> DocumentType</h3> <p>和 doctype 有关，<code>&lt;!DOCTYPE html&gt;</code></p> <h3 id="动态创建"><a href="#动态创建" class="header-anchor">#</a> 动态创建</h3> <h3 id="mutationobserver-接口"><a href="#mutationobserver-接口" class="header-anchor">#</a> MutationObserver 接口</h3> <p>变化观察者，即 DOM 变化时，进行回调</p> <h4 id="mutation-events"><a href="#mutation-events" class="header-anchor">#</a> Mutation events</h4> <p>即 MutationsObserver 的前身，为每个节点的一些公共事件。</p> <p>事件列表包括 DOMAttrModified、DOMAttributeNameChanged、DOMCharacterDataModified、DOMElementNameChanged、DOMNodeInserted、DOMNodeRemoved、DOMNodeInsertedIntoDocument、DOMSubtreeModified。</p> <p>常用的事件为 DOMNodeRemoved，DOMNodeInserted 和 DOMSubtreeModified。</p> <p>分别用于 监听元素子项的删除，新增，修改(包括删除和新增。</p> <p>但由于 IE 兼容，部分属性在浏览器上不兼容，且有性能问题</p> <ul><li>Mutation Events
+是同步执行的，它的每次调用，都需要从事件队列中取出事件，执行，然后事件队列中移除，期间需要移动队列元素。
+如果事件触发的较为频繁的话，每一次都需要执行上面的这些步骤，那么浏览器会被拖慢。</li> <li>Mutation Events
+本身是事件，所以捕获是采用的是事件冒泡的形式，如果冒泡捕获期间又触发了其他的 MutationEvents 的话，很有可能就会导致阻塞 Javascript 线程，甚至导致浏览器崩溃。</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;list&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span>
+  <span class="token string">&quot;DOMSubtreeModified&quot;</span><span class="token punctuation">,</span>
+  <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;列表中子元素被修改&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token boolean">false</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h4 id="mutationobserver-使用"><a href="#mutationobserver-使用" class="header-anchor">#</a> MutationObserver 使用</h4> <ul><li>构造 mutation observer 实例
+使用 new 构造观察者实例，参数为回调函数，回调函数有两个参数，参数 1 表示变化记录数组, 数组中的每一项都是 MutationRecord 实例，参数 2 为观察者本身</li> <li>调用实例的 observer.observe(node, config)
+初始化的观察者没有监听功能, 需调用 observe 方法挂载元素, 一个实例可以观察多个元素, 指向一个地址但变量名不同的元素发生变化时也会触发观察者, 对同一个元素进行多次监听会进行覆盖, 若节点被操作后没有变化也会触发观察者事件, 即多次实行同样操作, 也都会记录在变化记录数组中。
+参数 1 为元素节点，参数 2 为观察者属性对象，即表明哪些情况需要监听, 参数都是必需的。
+*childLIst 新增和删除子节点，是否观察
+*attributes 新增或删除了某属性，是否观察
+characterData 如果目标节点为 characterData 节点(一种抽象接口，具体可以为文本节点，注释节点，以及处理指令节点)时，是否观察
+*subtree 子树上所有变化，是否变化观察
+attributeOldValue 在 attributes 属性已经设为 true 的前提下， 监听时是否记录旧属性值(记录到 MutationRecord 的 oldValue 属性中)
+characterDataOldValue 在 characterData 属性已经设为 true 的前提下，监听时是否记录旧属性值(记录到 MutationRecord 的 oldValue 属性中)
+attributeFilter 属性名数组, 只有该数组中包含的属性名发生变化时才会被观察到</li> <li>停止观察
+调用观察者的 disconnect() 方法取消观察元素, 再次开启调用 observe 方法</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> div <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;test&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> testDiv <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;test&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 指向同一个元素</span>
+<span class="token keyword">let</span> <span class="token function-variable function">callback</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">mutations<span class="token punctuation">,</span> itself</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>mutations<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">// mutations.forEach(item=&gt;{</span>
+  <span class="token comment">//     console.log(item.type)</span>
+  <span class="token comment">// })</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> config <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token literal-property property">attributes</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token literal-property property">childList</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token literal-property property">characterData</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">;</span> <span class="token comment">// 这三者必须有一个为 true, 否则报错</span>
+<span class="token keyword">let</span> observer <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">MutationObserver</span><span class="token punctuation">(</span>callback<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 回调函数</span>
+observer<span class="token punctuation">.</span><span class="token function">observe</span><span class="token punctuation">(</span>div<span class="token punctuation">,</span> config<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 监听 div</span>
+testDiv<span class="token punctuation">.</span><span class="token function">setAttributes</span><span class="token punctuation">(</span><span class="token string">&quot;foo&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;bar&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 虽没有监听`testDiv`但是指向同一元素的变量`div`被监听, 故会触发观察者事件</span>
+observer<span class="token punctuation">.</span><span class="token function">observe</span><span class="token punctuation">(</span>div<span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token literal-property property">attributes</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token literal-property property">childList</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 新的监听覆盖旧的监听</span>
+testDiv<span class="token punctuation">.</span><span class="token function">setAttributes</span><span class="token punctuation">(</span><span class="token string">&quot;foo&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;bar&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 此时没有触发回调</span>
+observer<span class="token punctuation">.</span><span class="token function">disconnrct</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 停止监听 div</span>
+</code></pre></div><h4 id="观察者观察范围"><a href="#观察者观察范围" class="header-anchor">#</a> 观察者观察范围</h4> <p>若设置观察属性对象的所有属性为 true, 观察可观察的事件有</p> <ul><li><p>节点属性
+attributes 属性设置为 true，</p></li> <li><p>观察字符数据
+characterData 属性设置为 true, 即节点的字符增删改, 例如 Text, Comment 字符。</p></li> <li><p>观察子节点
+childList 属性设置为 true, 即子节点的增删</p></li> <li><p>观察子树
+subtree 属性设置为 true, 即所有后代节点及上面的增删改查</p></li></ul> <h4 id="异步回调和执行队列"><a href="#异步回调和执行队列" class="header-anchor">#</a> 异步回调和执行队列</h4> <p>执行顺序是:同步代码 &gt; 观察者前的微任务 &gt; 观察者 &gt; 观察者后的微任务 &gt; 宏任务</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">setTimeOut</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+Promise<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+testDiv<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">&quot;foo&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;1&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+Promise<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 0 1 [MutationRecord] 2 3</span>
+</code></pre></div><ul><li><p>takeRecords()
+用于清空变化者记录队列, 若该方法是同步的, 会在作为微任务的 callback 事件之前, 调用时返回变化者记录数组</p> <div class="language-js extra-class"><pre class="language-js"><code>testDiv<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">&quot;foo&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;1&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+testDiv<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">&quot;foo&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;1&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+testDiv<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">&quot;foo&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;1&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+observer<span class="token punctuation">.</span><span class="token function">takeRecords</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 返回 [MutationRecord, MutationRecord, MutationRecord] 并且清空, 则上面的监听无效</span>
+observer<span class="token punctuation">.</span><span class="token function">takeRecords</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// []</span>
+</code></pre></div></li></ul> <div class="language- extra-class"><pre class="language-text"><code></code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.caadd38c.js" defer></script><script src="/assets/js/2.2defd20b.js" defer></script><script src="/assets/js/31.575e2c13.js" defer></script>
+  </body>
+</html>

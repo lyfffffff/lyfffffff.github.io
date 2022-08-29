@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>十八、图形与Canvas | LYFFFF 的博客呀</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="./public/logo.webp">
+    <meta name="description" content="道阻且长，勤能补拙">
+    
+    <link rel="preload" href="/assets/css/0.styles.9825735b.css" as="style"><link rel="preload" href="/assets/js/app.caadd38c.js" as="script"><link rel="preload" href="/assets/js/2.2defd20b.js" as="script"><link rel="preload" href="/assets/js/29.b57552f4.js" as="script"><link rel="prefetch" href="/assets/js/10.097aea1a.js"><link rel="prefetch" href="/assets/js/11.c2c5675c.js"><link rel="prefetch" href="/assets/js/12.c2622d7c.js"><link rel="prefetch" href="/assets/js/13.00665759.js"><link rel="prefetch" href="/assets/js/14.4659e7b2.js"><link rel="prefetch" href="/assets/js/15.c34835e2.js"><link rel="prefetch" href="/assets/js/16.1093532d.js"><link rel="prefetch" href="/assets/js/17.1fff1e75.js"><link rel="prefetch" href="/assets/js/18.9a84c05c.js"><link rel="prefetch" href="/assets/js/19.9837b8ba.js"><link rel="prefetch" href="/assets/js/20.0b8189fb.js"><link rel="prefetch" href="/assets/js/21.dc29329c.js"><link rel="prefetch" href="/assets/js/22.e4101b35.js"><link rel="prefetch" href="/assets/js/23.8a7bb0ad.js"><link rel="prefetch" href="/assets/js/24.01fb6d46.js"><link rel="prefetch" href="/assets/js/25.b102803a.js"><link rel="prefetch" href="/assets/js/26.f820b976.js"><link rel="prefetch" href="/assets/js/27.bf356171.js"><link rel="prefetch" href="/assets/js/28.23d385bd.js"><link rel="prefetch" href="/assets/js/3.f9cd476e.js"><link rel="prefetch" href="/assets/js/30.eb70eecb.js"><link rel="prefetch" href="/assets/js/31.575e2c13.js"><link rel="prefetch" href="/assets/js/32.bce33679.js"><link rel="prefetch" href="/assets/js/33.0bd8f6cb.js"><link rel="prefetch" href="/assets/js/34.f33fa1b5.js"><link rel="prefetch" href="/assets/js/35.9cabab55.js"><link rel="prefetch" href="/assets/js/36.770a3e3f.js"><link rel="prefetch" href="/assets/js/37.d0599fe3.js"><link rel="prefetch" href="/assets/js/38.7099a479.js"><link rel="prefetch" href="/assets/js/39.e9ee67e8.js"><link rel="prefetch" href="/assets/js/4.11957e18.js"><link rel="prefetch" href="/assets/js/40.cc0ea31c.js"><link rel="prefetch" href="/assets/js/41.87e19d2c.js"><link rel="prefetch" href="/assets/js/42.ffa0b4fc.js"><link rel="prefetch" href="/assets/js/43.0c185241.js"><link rel="prefetch" href="/assets/js/5.e5b70a6f.js"><link rel="prefetch" href="/assets/js/6.4169e03e.js"><link rel="prefetch" href="/assets/js/7.c3602c94.js"><link rel="prefetch" href="/assets/js/8.ec3ff6fe.js"><link rel="prefetch" href="/assets/js/9.48df350d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9825735b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">LYFFFF 的博客呀</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Hmoe
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="笔记" class="dropdown-title"><span class="title">笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="笔记" class="mobile-dropdown-title"><span class="title">笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/note/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/note/正则表达式/" class="nav-link">
+  正则表达式
+</a></li><li class="dropdown-item"><!----> <a href="/note/客户端存储/" class="nav-link">
+  客户端存储
+</a></li><li class="dropdown-item"><!----> <a href="/note/模块化/" class="nav-link">
+  模块化
+</a></li><li class="dropdown-item"><!----> <a href="/note/渲染式组件/" class="nav-link">
+  渲染式组件
+</a></li><li class="dropdown-item"><!----> <a href="/note/原型和原型链/" class="nav-link">
+  原型和原型链
+</a></li><li class="dropdown-item"><!----> <a href="/note/组件传值/" class="nav-link">
+  组件传值
+</a></li><li class="dropdown-item"><!----> <a href="/note/Reflect/" class="nav-link">
+  Reflect
+</a></li><li class="dropdown-item"><!----> <a href="/note/Vue响应式原理/" class="nav-link">
+  Vue响应式原理
+</a></li><li class="dropdown-item"><!----> <a href="/note/VueRouter/" class="nav-link">
+  VueRouter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="源码分析" class="dropdown-title"><span class="title">源码分析</span> <span class="arrow down"></span></button> <button type="button" aria-label="源码分析" class="mobile-dropdown-title"><span class="title">源码分析</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/code/clusterize源码/" class="nav-link">
+  clusterize源码
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="js高级设计4" class="dropdown-title"><span class="title">js高级设计4</span> <span class="arrow down"></span></button> <button type="button" aria-label="js高级设计4" class="mobile-dropdown-title"><span class="title">js高级设计4</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/js4/二、javascript/" class="nav-link">
+  二、javascript
+</a></li><li class="dropdown-item"><!----> <a href="/js4/三、语言语法/" class="nav-link">
+  三、语言语法
+</a></li><li class="dropdown-item"><!----> <a href="/js4/四、变量作用域和内存/" class="nav-link">
+  四、变量作用域和内存
+</a></li><li class="dropdown-item"><!----> <a href="/js4/五、基本引用类型/" class="nav-link">
+  五、基本引用类型
+</a></li><li class="dropdown-item"><!----> <a href="/js4/六、集合引用类型/" class="nav-link">
+  六、集合引用类型
+</a></li><li class="dropdown-item"><!----> <a href="/js4/七、迭代器与生成器/" class="nav-link">
+  七、迭代器与生成器
+</a></li><li class="dropdown-item"><!----> <a href="/js4/八、类和对象以及面向对象编程/" class="nav-link">
+  八、类和对象以及面向对象编程
+</a></li><li class="dropdown-item"><!----> <a href="/js4/九、代理和反射/" class="nav-link">
+  九、代理和反射
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十、函数/" class="nav-link">
+  十、函数
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十一、期约和异步函数/" class="nav-link">
+  十一、期约和异步函数
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十二、BOM/" class="nav-link">
+  十二、BOM
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十三、客户端检测/" class="nav-link">
+  十三、客户端检测
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十四、DOM/" class="nav-link">
+  十四、DOM
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十五、DOM 扩展/" class="nav-link">
+  十五、DOM 扩展
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十六、DOM2 和 DOM3/" class="nav-link">
+  十六、DOM2 和 DOM3
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十七、事件/" class="nav-link">
+  十七、事件
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十八、图形与Canvas/" class="nav-link">
+  十八、图形与Canvas
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十九、表单脚本/" class="nav-link">
+  十九、表单脚本
+</a></li><li class="dropdown-item"><!----> <a href="/js4/二十、JavaScript API/" class="nav-link">
+  二十、JavaScript API
+</a></li><li class="dropdown-item"><!----> <a href="/js4/二十五、客户端储存/" class="nav-link">
+  二十五、客户端储存
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="关于" class="dropdown-title"><span class="title">关于</span> <span class="arrow down"></span></button> <button type="button" aria-label="关于" class="mobile-dropdown-title"><span class="title">关于</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/lyfffffff" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/LYFFFF_" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSND
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Hmoe
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="笔记" class="dropdown-title"><span class="title">笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="笔记" class="mobile-dropdown-title"><span class="title">笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/note/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/note/正则表达式/" class="nav-link">
+  正则表达式
+</a></li><li class="dropdown-item"><!----> <a href="/note/客户端存储/" class="nav-link">
+  客户端存储
+</a></li><li class="dropdown-item"><!----> <a href="/note/模块化/" class="nav-link">
+  模块化
+</a></li><li class="dropdown-item"><!----> <a href="/note/渲染式组件/" class="nav-link">
+  渲染式组件
+</a></li><li class="dropdown-item"><!----> <a href="/note/原型和原型链/" class="nav-link">
+  原型和原型链
+</a></li><li class="dropdown-item"><!----> <a href="/note/组件传值/" class="nav-link">
+  组件传值
+</a></li><li class="dropdown-item"><!----> <a href="/note/Reflect/" class="nav-link">
+  Reflect
+</a></li><li class="dropdown-item"><!----> <a href="/note/Vue响应式原理/" class="nav-link">
+  Vue响应式原理
+</a></li><li class="dropdown-item"><!----> <a href="/note/VueRouter/" class="nav-link">
+  VueRouter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="源码分析" class="dropdown-title"><span class="title">源码分析</span> <span class="arrow down"></span></button> <button type="button" aria-label="源码分析" class="mobile-dropdown-title"><span class="title">源码分析</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/code/clusterize源码/" class="nav-link">
+  clusterize源码
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="js高级设计4" class="dropdown-title"><span class="title">js高级设计4</span> <span class="arrow down"></span></button> <button type="button" aria-label="js高级设计4" class="mobile-dropdown-title"><span class="title">js高级设计4</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/js4/二、javascript/" class="nav-link">
+  二、javascript
+</a></li><li class="dropdown-item"><!----> <a href="/js4/三、语言语法/" class="nav-link">
+  三、语言语法
+</a></li><li class="dropdown-item"><!----> <a href="/js4/四、变量作用域和内存/" class="nav-link">
+  四、变量作用域和内存
+</a></li><li class="dropdown-item"><!----> <a href="/js4/五、基本引用类型/" class="nav-link">
+  五、基本引用类型
+</a></li><li class="dropdown-item"><!----> <a href="/js4/六、集合引用类型/" class="nav-link">
+  六、集合引用类型
+</a></li><li class="dropdown-item"><!----> <a href="/js4/七、迭代器与生成器/" class="nav-link">
+  七、迭代器与生成器
+</a></li><li class="dropdown-item"><!----> <a href="/js4/八、类和对象以及面向对象编程/" class="nav-link">
+  八、类和对象以及面向对象编程
+</a></li><li class="dropdown-item"><!----> <a href="/js4/九、代理和反射/" class="nav-link">
+  九、代理和反射
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十、函数/" class="nav-link">
+  十、函数
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十一、期约和异步函数/" class="nav-link">
+  十一、期约和异步函数
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十二、BOM/" class="nav-link">
+  十二、BOM
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十三、客户端检测/" class="nav-link">
+  十三、客户端检测
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十四、DOM/" class="nav-link">
+  十四、DOM
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十五、DOM 扩展/" class="nav-link">
+  十五、DOM 扩展
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十六、DOM2 和 DOM3/" class="nav-link">
+  十六、DOM2 和 DOM3
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十七、事件/" class="nav-link">
+  十七、事件
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十八、图形与Canvas/" class="nav-link">
+  十八、图形与Canvas
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十九、表单脚本/" class="nav-link">
+  十九、表单脚本
+</a></li><li class="dropdown-item"><!----> <a href="/js4/二十、JavaScript API/" class="nav-link">
+  二十、JavaScript API
+</a></li><li class="dropdown-item"><!----> <a href="/js4/二十五、客户端储存/" class="nav-link">
+  二十五、客户端储存
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="关于" class="dropdown-title"><span class="title">关于</span> <span class="arrow down"></span></button> <button type="button" aria-label="关于" class="mobile-dropdown-title"><span class="title">关于</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/lyfffffff" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/LYFFFF_" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSND
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/js4/%E5%8D%81%E5%85%AB%E3%80%81%E5%9B%BE%E5%BD%A2%E4%B8%8ECanvas/" aria-current="page" class="active sidebar-link">十八、图形与Canvas</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/js4/%E5%8D%81%E5%85%AB%E3%80%81%E5%9B%BE%E5%BD%A2%E4%B8%8ECanvas/#十八、图形与canvas" class="sidebar-link">十八、图形与Canvas</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="十八、图形与canvas"><a href="#十八、图形与canvas" class="header-anchor">#</a> 十八、图形与Canvas</h2> <h3 id="减少重绘"><a href="#减少重绘" class="header-anchor">#</a> 减少重绘</h3> <ul><li>requestAnimationFrame(fn?:Function):Long</li></ul> <p>并不是专用于 Canvas，而是用于浏览器重绘时阶段性的进行动画，在浏览器触发重绘事件时调用参数 fn，若在 fn 中继续进行动画，则可以减少浏览器进行重绘，requestAnimationFrame() 返回一个请求 id。</p> <ul><li>cancelAnimationFarme<br>
+用于取消 requestAnimationFrame，传入 requestAnimationFrame 的 id。</li></ul> <h3 id="画布与上下文"><a href="#画布与上下文" class="header-anchor">#</a> 画布与上下文</h3> <p>使用 html5 的新标签 <code>&lt;canvas&gt;</code> 进行绘画，属性 width 和 height 设置画布宽高。</p> <p>注意，若直接在选择器上设置 css 样式，会导致图案比例不对。</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>canvas</span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token value css language-css"><span class="token property">border</span><span class="token punctuation">:</span>1px solid red</span><span class="token punctuation">&quot;</span></span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>200<span class="token punctuation">&quot;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>200<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>canvas</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>获取 canvas 节点后使用 getContext(type:'2d'|...) 取得绘图上下文，即画笔，并利用上下文中作画。</p> <p>注意，getContext 方法未必存在，平面图形传参 '2d'。</p> <p>若绘画超过画布，不显示。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> canvas <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'canvas'</span><span class="token punctuation">)</span>
+<span class="token keyword">if</span><span class="token punctuation">(</span>canvas<span class="token punctuation">.</span>getContext<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">let</span> context <span class="token operator">=</span> canvans<span class="token punctuation">.</span><span class="token function">getContext</span><span class="token punctuation">(</span><span class="token string">'2d'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>画布转图片<br>
+canvas 元素还有一个 toDataURL(MIMEtype:&quot;image/png&quot;|....) 方法，用于将画布转为图片链接。</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> canvas <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'canvas'</span><span class="token punctuation">)</span>
+<span class="token keyword">let</span> imgURL <span class="token operator">=</span> canvas<span class="token punctuation">.</span><span class="token function">toDataURL</span><span class="token punctuation">(</span><span class="token string">'image/png'</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="画图"><a href="#画图" class="header-anchor">#</a> 画图</h3> <p>基于画笔上下文 context ，2d 画图默认起始坐标是左上角，定为 (0,0)，x 坐标向右增长，y 坐标向下增长。</p> <h4 id="填充和描边"><a href="#填充和描边" class="header-anchor">#</a> 填充和描边</h4> <p>皆为设置属性。 fillStyle 为填充属性，strokeStyle 为描边属性。</p> <div class="language-js extra-class"><pre class="language-js"><code>context<span class="token punctuation">.</span>fillStyle <span class="token operator">=</span> colorStr<span class="token operator">:</span><span class="token string">'red'</span><span class="token operator">|</span><span class="token string">'#FFF'</span>
+context<span class="token punctuation">.</span>strokeStyle <span class="token operator">=</span> colorStr<span class="token operator">:</span><span class="token string">'red'</span><span class="token operator">|</span><span class="token string">'#FFF'</span>
+</code></pre></div><h4 id="绘制矩形"><a href="#绘制矩形" class="header-anchor">#</a> 绘制矩形</h4> <p>画布中只可以直接画矩形（rectangle），每一个绘制矩形的方法皆有四个参数，分别是x坐标、y坐标、矩形宽度、矩形长度，皆为数值，表示像素值。</p> <ul><li>fillRect(x,y,width,height)<br>
+填充一个矩形</li> <li>strokeRect(x,y,width,height)
+描绘一个矩形轮廓</li> <li>clearRect(x,y,width,height)
+画一个白底矩形，类似于清除</li></ul> <h4 id="绘制路径"><a href="#绘制路径" class="header-anchor">#</a> 绘制路径</h4> <p>调用上下文的 beginPath 方法表示开始绘制路径，可以描绘的路径如下：</p> <ul><li>arc(x,y,radius,sAngle,eAngle,resverse)<br>
+从坐标(x,y)为圆心，从东的方向顺时针，以 radius
+为半径，画一条弧线，参数 resverse 表示是否逆时针计算角度。注意 sAngle 和 eAngle 为弧度制，eAngle 若不合法，则默认为 2*Math.PI，sAngle不好说。</li> <li>arcTo(x,y,x1,y1,radius)<br>
+从起点开始，经过点(x,y)，到达(x1,y1)，弧线半径为 radius</li> <li>quadraticCurveTo(cx, cy, x, y)<br>
+以(cx, cy)为控制点，绘制一条从上一点到(x, y)
+的弧线。</li> <li>bezierCurveTo(c1x, c1y, c2x, c2y, x, y)<br>
+以(c1x, c1y)和(c2x, c2y)为控制点，
+绘制一条从上一点到(x, y)的弧线。</li> <li>lineTo(x,y)<br>
+从上一点到点(x,y)的直线</li> <li>moveTo(x,y)<br>
+把绘制光标移动到(x, y)。</li> <li>rect(x, y, width, height)<br>
+画矩形</li></ul> <h4 id="路径完成"><a href="#路径完成" class="header-anchor">#</a> 路径完成</h4> <ul><li>closePath()<br>
+返回起始点</li> <li>fill()<br>
+填充路径</li> <li>stroke()<br>
+描绘路径</li></ul> <h4 id="检查路径"><a href="#检查路径" class="header-anchor">#</a> 检查路径</h4> <p>检查路径的方法是检查某点是否如期的在路径上。</p> <p>context.isPointInPath(x,y):Boolean</p> <h4 id="绘制文字"><a href="#绘制文字" class="header-anchor">#</a> 绘制文字</h4> <p>绘制文字前，需了解上下文的文字相关属性。</p> <p>但是此属性有默认值，可以不设。</p> <h5 id="文本属性"><a href="#文本属性" class="header-anchor">#</a> 文本属性</h5> <ul><li>font<br>
+字体相关，例如字体大小，字体样式等。</li> <li>textAlign<br>
+字体对齐方式，有 start/end 和 right/left 可选，但是推荐使用 start/end，表示坐标在文本的左右侧。</li> <li>textBaseLine<br>
+文本的基线，值包括 &quot;top&quot; 、 &quot;hanging&quot; 、 &quot;middle&quot; 、
+&quot;alphabetic&quot;、&quot;ideographic&quot;和&quot;bottom&quot;。</li></ul> <h5 id="绘制文字-2"><a href="#绘制文字-2" class="header-anchor">#</a> 绘制文字</h5> <p>context.fillText(words, x, y) 和 context.strokeText(words, x, y);</p> <h4 id="变换"><a href="#变换" class="header-anchor">#</a> 变换</h4> <p>用户操作图像，即</p> <ul><li>rotate(angle)<br>
+围绕原点把图像旋转 angle 弧度</li> <li>scale(scaleX,scaleY)<br>
+x轴缩放scaleX倍，y轴缩放scaleY轴</li> <li>translate(x, y)<br>
+把原点移动到(x, y)。执行这个操作后，坐标(0, 0)就会变成(x, y)。</li> <li>transform(m1_1, m1_2, m2_1, m2_2, dx, dy)
+通过矩阵乘法直接修改矩阵。</li></ul> <h4 id="绘制图像"><a href="#绘制图像" class="header-anchor">#</a> 绘制图像</h4> <p>获取图像，调用上下文的 drawImage() 方法将图像绘制在画布中。</p> <ul><li>context.drawImage(img,x,y,width,height)</li> <li>context.drawImage(img, x, y, width , height, c_x, c_y, c_width, c_height);</li></ul> <h4 id="阴影"><a href="#阴影" class="header-anchor">#</a> 阴影</h4> <ul><li>shadowColor
+阴影颜色</li> <li>shadowOffsetX
+阴影相对于X轴的偏移量</li> <li>shadowOffsetY
+阴影相对于Y轴的偏移量</li> <li>shadowBlur
+阴影模糊量</li></ul> <h4 id="渐变"><a href="#渐变" class="header-anchor">#</a> 渐变</h4> <p>调用上下文的 createLinearGradient(s_x,s_y,e_x,e_y) 方法创建一个渐变对象。</p> <p>该对象有 addColorStop(num,color) 设置渐变色</p> <p>其中 num 表示色标位置，范围为 0~1，0 表示第一种颜色，1 表示最后一种颜色。</p> <p>可以把渐变对象赋给 fillStyle 或 strokeStyle 属性，从而以渐变填充
+或描画绘制的图形：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> gradient <span class="token operator">=</span> context<span class="token punctuation">.</span><span class="token function">createLinearGradient</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token number">70</span><span class="token punctuation">,</span> <span class="token number">70</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+gradient<span class="token punctuation">.</span><span class="token function">addColorStop</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">&quot;white&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+gradient<span class="token punctuation">.</span><span class="token function">addColorStop</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">&quot;black&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h4 id="图案"><a href="#图案" class="header-anchor">#</a> 图案</h4> <p>调用上下文的 createPatten(img,repeat) 创建图案，返回图案对象。</p> <p>参数 repeat 表示图像如何重复，与 css 中 background-repeat 的取值相同。</p> <p>可以把这个对象赋给 fillStyle 或 strokeStyle 属性，从而以渐变填充
+或描画绘制的图形。</p> <h4 id="图像数据"><a href="#图像数据" class="header-anchor">#</a> 图像数据</h4> <p>调用上下文的 getImageData(x,y,width,height) 方法获取原始图像数据，返回一个imageData对象。</p> <p>imageData对象包含三个属性，width、height 和 data。</p> <p>data 为一个数组，每四个为一组表示一个像素信息，分别是 rgba(red,yellow,blue,alpha) 中代表红黄蓝透明度。每个值都在0~255中，连alpha都是。</p> <h4 id="合成"><a href="#合成" class="header-anchor">#</a> 合成</h4> <p>上下文有两个属性，globalAlpha 和 globalCompositionOperation。</p> <p>globalAlpha 是指全局透明度，范围为0~1，分别表示不透明到透明。</p> <p>设置了globalAlpha，可使图案透过下面图案，达到合成的效果，但真实的合成是使用另一个属性。</p> <p>globalCompositionOperation 属性使新绘制的形状与上下文中已有的形状融合，可以取下列值：</p> <ul><li>source-over<br>
+默认值，新图形覆盖原有图形。</li> <li>source-in<br>
+取交集，画布上只绘制出新图形与原有图形重叠的部分，其余部分全部透明。</li> <li>source-out<br>
+取+集，画布上只绘制出新图形不与原有图形重叠的部分，其余部分全部透明。</li> <li>source-atop<br>
+新图形只绘制出与原有图形重叠的部分，原有图形不受影响。</li> <li>destination-over<br>
+新图形绘制在原有图形下面，重叠部分只有原图形透明像素下的部分可见。</li> <li>destination-in<br>
+新图形绘制在原有图形下面，画布上只剩下二者重叠的部分，其余部分完全
+透明。</li> <li>destination-out<br>
+新图形与原有图形重叠的部分完全透明，原图形其余部分不受影响。</li> <li>destination-atop<br>
+新图形绘制在原有图形下面，原有图形与新图形不重叠的部分完全透明。</li> <li>lighter<br>
+新图形与原有图形重叠部分的像素值相加，使该部分变亮。</li> <li>copy<br>
+新图形将擦除并完全取代原有图形。</li> <li>xor<br>
+新图形与原有图形重叠部分的像素执行“异或”计算。</li></ul> <h3 id="webgl"><a href="#webgl" class="header-anchor">#</a> WebGL</h3> <p>是为 3D 画图，基于 OpenGL 着色器语言（GLSL）绘画。而 2d 的绘画是基于 js 语言的。</p> <p>调用 canvas 的 getContext('webgl',options) 生成 3d 上下文 gl 时，options 参数可以设置 webGL 的属性，有下列属性。</p> <ul><li>alpha<br>
+布尔值，表示是否为上下文创建透明通道缓冲区，默认为 true。</li> <li>depth<br>
+布尔值，表示是否使用 16 位深缓冲区，默认为 true。</li> <li>tencil<br>
+布尔值，表示是否使用 8 位模板缓冲区，默认为 false。</li> <li>ntialias<br>
+布尔值，表示是否使用默认机制执行抗锯齿操作，默认为 true。</li> <li>premultipliedAlpha<br>
+布尔值，表示绘图缓冲区是否预乘透明度值，默认为 true。</li> <li>reserveDrawingBuffer<br>
+布尔值，表示绘图完成后是否保留绘图缓冲区，默认为 false。
+建议在充分了解这个选项的作用后再自行修改，因为这可能会影响性能。</li></ul> <p>常使用 try-catch 检测浏览器是否能创建 webGl 上下文。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">if</span> <span class="token punctuation">(</span>drawing<span class="token punctuation">.</span>getContext<span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+     <span class="token keyword">try</span> <span class="token punctuation">{</span> 
+     gl <span class="token operator">=</span> drawing<span class="token punctuation">.</span><span class="token function">getContext</span><span class="token punctuation">(</span><span class="token string">&quot;webgl&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+     <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>ex<span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+     <span class="token comment">// 什么也不做</span>
+     <span class="token punctuation">}</span>
+     <span class="token keyword">if</span> <span class="token punctuation">(</span>gl<span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+     <span class="token comment">// 使用 WebGL </span>
+     <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span> 
+     <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&quot;WebGL context could not be created.&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+     <span class="token punctuation">}</span> 
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="webgl-和-opengl"><a href="#webgl-和-opengl" class="header-anchor">#</a> WebGL 和 OpenGL</h4> <p>WebGL 是 OpenGL ES 2.0 的 Web
+版，所以内容皆是其衍生，即 JavaScript 所实现的 OpenGL。</p> <ul><li>常量
+WebGL 支持大部分 OpenGL 常量，但变量名可能会改变，即不包含 'GL_' 前缀。</li> <li>方法命名</li></ul> <p>TODO</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.caadd38c.js" defer></script><script src="/assets/js/2.2defd20b.js" defer></script><script src="/assets/js/29.b57552f4.js" defer></script>
+  </body>
+</html>

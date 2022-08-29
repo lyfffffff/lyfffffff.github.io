@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>十九、表单脚本 | LYFFFF 的博客呀</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="./public/logo.webp">
+    <meta name="description" content="道阻且长，勤能补拙">
+    
+    <link rel="preload" href="/assets/css/0.styles.9825735b.css" as="style"><link rel="preload" href="/assets/js/app.caadd38c.js" as="script"><link rel="preload" href="/assets/js/2.2defd20b.js" as="script"><link rel="preload" href="/assets/js/26.f820b976.js" as="script"><link rel="prefetch" href="/assets/js/10.097aea1a.js"><link rel="prefetch" href="/assets/js/11.c2c5675c.js"><link rel="prefetch" href="/assets/js/12.c2622d7c.js"><link rel="prefetch" href="/assets/js/13.00665759.js"><link rel="prefetch" href="/assets/js/14.4659e7b2.js"><link rel="prefetch" href="/assets/js/15.c34835e2.js"><link rel="prefetch" href="/assets/js/16.1093532d.js"><link rel="prefetch" href="/assets/js/17.1fff1e75.js"><link rel="prefetch" href="/assets/js/18.9a84c05c.js"><link rel="prefetch" href="/assets/js/19.9837b8ba.js"><link rel="prefetch" href="/assets/js/20.0b8189fb.js"><link rel="prefetch" href="/assets/js/21.dc29329c.js"><link rel="prefetch" href="/assets/js/22.e4101b35.js"><link rel="prefetch" href="/assets/js/23.8a7bb0ad.js"><link rel="prefetch" href="/assets/js/24.01fb6d46.js"><link rel="prefetch" href="/assets/js/25.b102803a.js"><link rel="prefetch" href="/assets/js/27.bf356171.js"><link rel="prefetch" href="/assets/js/28.23d385bd.js"><link rel="prefetch" href="/assets/js/29.b57552f4.js"><link rel="prefetch" href="/assets/js/3.f9cd476e.js"><link rel="prefetch" href="/assets/js/30.eb70eecb.js"><link rel="prefetch" href="/assets/js/31.575e2c13.js"><link rel="prefetch" href="/assets/js/32.bce33679.js"><link rel="prefetch" href="/assets/js/33.0bd8f6cb.js"><link rel="prefetch" href="/assets/js/34.f33fa1b5.js"><link rel="prefetch" href="/assets/js/35.9cabab55.js"><link rel="prefetch" href="/assets/js/36.770a3e3f.js"><link rel="prefetch" href="/assets/js/37.d0599fe3.js"><link rel="prefetch" href="/assets/js/38.7099a479.js"><link rel="prefetch" href="/assets/js/39.e9ee67e8.js"><link rel="prefetch" href="/assets/js/4.11957e18.js"><link rel="prefetch" href="/assets/js/40.cc0ea31c.js"><link rel="prefetch" href="/assets/js/41.87e19d2c.js"><link rel="prefetch" href="/assets/js/42.ffa0b4fc.js"><link rel="prefetch" href="/assets/js/43.0c185241.js"><link rel="prefetch" href="/assets/js/5.e5b70a6f.js"><link rel="prefetch" href="/assets/js/6.4169e03e.js"><link rel="prefetch" href="/assets/js/7.c3602c94.js"><link rel="prefetch" href="/assets/js/8.ec3ff6fe.js"><link rel="prefetch" href="/assets/js/9.48df350d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9825735b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">LYFFFF 的博客呀</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Hmoe
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="笔记" class="dropdown-title"><span class="title">笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="笔记" class="mobile-dropdown-title"><span class="title">笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/note/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/note/正则表达式/" class="nav-link">
+  正则表达式
+</a></li><li class="dropdown-item"><!----> <a href="/note/客户端存储/" class="nav-link">
+  客户端存储
+</a></li><li class="dropdown-item"><!----> <a href="/note/模块化/" class="nav-link">
+  模块化
+</a></li><li class="dropdown-item"><!----> <a href="/note/渲染式组件/" class="nav-link">
+  渲染式组件
+</a></li><li class="dropdown-item"><!----> <a href="/note/原型和原型链/" class="nav-link">
+  原型和原型链
+</a></li><li class="dropdown-item"><!----> <a href="/note/组件传值/" class="nav-link">
+  组件传值
+</a></li><li class="dropdown-item"><!----> <a href="/note/Reflect/" class="nav-link">
+  Reflect
+</a></li><li class="dropdown-item"><!----> <a href="/note/Vue响应式原理/" class="nav-link">
+  Vue响应式原理
+</a></li><li class="dropdown-item"><!----> <a href="/note/VueRouter/" class="nav-link">
+  VueRouter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="源码分析" class="dropdown-title"><span class="title">源码分析</span> <span class="arrow down"></span></button> <button type="button" aria-label="源码分析" class="mobile-dropdown-title"><span class="title">源码分析</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/code/clusterize源码/" class="nav-link">
+  clusterize源码
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="js高级设计4" class="dropdown-title"><span class="title">js高级设计4</span> <span class="arrow down"></span></button> <button type="button" aria-label="js高级设计4" class="mobile-dropdown-title"><span class="title">js高级设计4</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/js4/二、javascript/" class="nav-link">
+  二、javascript
+</a></li><li class="dropdown-item"><!----> <a href="/js4/三、语言语法/" class="nav-link">
+  三、语言语法
+</a></li><li class="dropdown-item"><!----> <a href="/js4/四、变量作用域和内存/" class="nav-link">
+  四、变量作用域和内存
+</a></li><li class="dropdown-item"><!----> <a href="/js4/五、基本引用类型/" class="nav-link">
+  五、基本引用类型
+</a></li><li class="dropdown-item"><!----> <a href="/js4/六、集合引用类型/" class="nav-link">
+  六、集合引用类型
+</a></li><li class="dropdown-item"><!----> <a href="/js4/七、迭代器与生成器/" class="nav-link">
+  七、迭代器与生成器
+</a></li><li class="dropdown-item"><!----> <a href="/js4/八、类和对象以及面向对象编程/" class="nav-link">
+  八、类和对象以及面向对象编程
+</a></li><li class="dropdown-item"><!----> <a href="/js4/九、代理和反射/" class="nav-link">
+  九、代理和反射
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十、函数/" class="nav-link">
+  十、函数
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十一、期约和异步函数/" class="nav-link">
+  十一、期约和异步函数
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十二、BOM/" class="nav-link">
+  十二、BOM
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十三、客户端检测/" class="nav-link">
+  十三、客户端检测
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十四、DOM/" class="nav-link">
+  十四、DOM
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十五、DOM 扩展/" class="nav-link">
+  十五、DOM 扩展
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十六、DOM2 和 DOM3/" class="nav-link">
+  十六、DOM2 和 DOM3
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十七、事件/" class="nav-link">
+  十七、事件
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十八、图形与Canvas/" class="nav-link">
+  十八、图形与Canvas
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十九、表单脚本/" class="nav-link">
+  十九、表单脚本
+</a></li><li class="dropdown-item"><!----> <a href="/js4/二十、JavaScript API/" class="nav-link">
+  二十、JavaScript API
+</a></li><li class="dropdown-item"><!----> <a href="/js4/二十五、客户端储存/" class="nav-link">
+  二十五、客户端储存
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="关于" class="dropdown-title"><span class="title">关于</span> <span class="arrow down"></span></button> <button type="button" aria-label="关于" class="mobile-dropdown-title"><span class="title">关于</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/lyfffffff" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/LYFFFF_" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSND
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Hmoe
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="笔记" class="dropdown-title"><span class="title">笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="笔记" class="mobile-dropdown-title"><span class="title">笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/note/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/note/正则表达式/" class="nav-link">
+  正则表达式
+</a></li><li class="dropdown-item"><!----> <a href="/note/客户端存储/" class="nav-link">
+  客户端存储
+</a></li><li class="dropdown-item"><!----> <a href="/note/模块化/" class="nav-link">
+  模块化
+</a></li><li class="dropdown-item"><!----> <a href="/note/渲染式组件/" class="nav-link">
+  渲染式组件
+</a></li><li class="dropdown-item"><!----> <a href="/note/原型和原型链/" class="nav-link">
+  原型和原型链
+</a></li><li class="dropdown-item"><!----> <a href="/note/组件传值/" class="nav-link">
+  组件传值
+</a></li><li class="dropdown-item"><!----> <a href="/note/Reflect/" class="nav-link">
+  Reflect
+</a></li><li class="dropdown-item"><!----> <a href="/note/Vue响应式原理/" class="nav-link">
+  Vue响应式原理
+</a></li><li class="dropdown-item"><!----> <a href="/note/VueRouter/" class="nav-link">
+  VueRouter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="源码分析" class="dropdown-title"><span class="title">源码分析</span> <span class="arrow down"></span></button> <button type="button" aria-label="源码分析" class="mobile-dropdown-title"><span class="title">源码分析</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/code/clusterize源码/" class="nav-link">
+  clusterize源码
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="js高级设计4" class="dropdown-title"><span class="title">js高级设计4</span> <span class="arrow down"></span></button> <button type="button" aria-label="js高级设计4" class="mobile-dropdown-title"><span class="title">js高级设计4</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/js4/二、javascript/" class="nav-link">
+  二、javascript
+</a></li><li class="dropdown-item"><!----> <a href="/js4/三、语言语法/" class="nav-link">
+  三、语言语法
+</a></li><li class="dropdown-item"><!----> <a href="/js4/四、变量作用域和内存/" class="nav-link">
+  四、变量作用域和内存
+</a></li><li class="dropdown-item"><!----> <a href="/js4/五、基本引用类型/" class="nav-link">
+  五、基本引用类型
+</a></li><li class="dropdown-item"><!----> <a href="/js4/六、集合引用类型/" class="nav-link">
+  六、集合引用类型
+</a></li><li class="dropdown-item"><!----> <a href="/js4/七、迭代器与生成器/" class="nav-link">
+  七、迭代器与生成器
+</a></li><li class="dropdown-item"><!----> <a href="/js4/八、类和对象以及面向对象编程/" class="nav-link">
+  八、类和对象以及面向对象编程
+</a></li><li class="dropdown-item"><!----> <a href="/js4/九、代理和反射/" class="nav-link">
+  九、代理和反射
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十、函数/" class="nav-link">
+  十、函数
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十一、期约和异步函数/" class="nav-link">
+  十一、期约和异步函数
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十二、BOM/" class="nav-link">
+  十二、BOM
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十三、客户端检测/" class="nav-link">
+  十三、客户端检测
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十四、DOM/" class="nav-link">
+  十四、DOM
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十五、DOM 扩展/" class="nav-link">
+  十五、DOM 扩展
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十六、DOM2 和 DOM3/" class="nav-link">
+  十六、DOM2 和 DOM3
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十七、事件/" class="nav-link">
+  十七、事件
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十八、图形与Canvas/" class="nav-link">
+  十八、图形与Canvas
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十九、表单脚本/" class="nav-link">
+  十九、表单脚本
+</a></li><li class="dropdown-item"><!----> <a href="/js4/二十、JavaScript API/" class="nav-link">
+  二十、JavaScript API
+</a></li><li class="dropdown-item"><!----> <a href="/js4/二十五、客户端储存/" class="nav-link">
+  二十五、客户端储存
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="关于" class="dropdown-title"><span class="title">关于</span> <span class="arrow down"></span></button> <button type="button" aria-label="关于" class="mobile-dropdown-title"><span class="title">关于</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/lyfffffff" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/LYFFFF_" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSND
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/js4/%E5%8D%81%E4%B9%9D%E3%80%81%E8%A1%A8%E5%8D%95%E8%84%9A%E6%9C%AC/" aria-current="page" class="active sidebar-link">十九、表单脚本</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/js4/%E5%8D%81%E4%B9%9D%E3%80%81%E8%A1%A8%E5%8D%95%E8%84%9A%E6%9C%AC/#十九、表单脚本" class="sidebar-link">十九、表单脚本</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="十九、表单脚本"><a href="#十九、表单脚本" class="header-anchor">#</a> 十九、表单脚本</h2> <p>表单表现为一个 form 标签，里面包含许多诸如 input 的表单控件，可以进行提交。</p> <h3 id="表单基础"><a href="#表单基础" class="header-anchor">#</a> 表单基础</h3> <p>form 标签是 HTMLFormElement 类型，继承自 HTMLElement 类型，故他有普通标签的属性，也有自己的属性。</p> <ul><li>acceptCharset<br>
+服务器可以接收的字符集，等价于 HTML 的 accept-charset 属性。</li> <li>action<br>
+请求的 URL，等价于 HTML 的 action 属性。</li> <li>elements<br>
+表单中所有控件的 HTMLCollection。</li> <li>enctype<br>
+请求的编码类型，等价于 HTML 的 enctype 属性。</li> <li>length<br>
+表单中控件的数量。</li> <li>method<br>
+HTTP 请求的方法类型，通常是&quot;get&quot;或&quot;post&quot;，等价于 HTML 的 method 属性。</li> <li>name<br>
+表单的名字，等价于 HTML 的 name 属性。</li> <li>reset()<br>
+把表单字段重置为各自的默认值。</li> <li>submit()<br>
+提交表单。</li> <li>target<br>
+用于发送请求和接收响应的窗口的名字，等价于 HTML 的 target 属性。</li></ul> <h4 id="获取表单元素"><a href="#获取表单元素" class="header-anchor">#</a> 获取表单元素</h4> <p>可以直接使用 document.getElementBy[Id/Name/TagName] 获取，也可以使用 document.forms 获取所有表单元素</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 取得页面中的第一个表单</span>
+<span class="token keyword">let</span> firstForm <span class="token operator">=</span> document<span class="token punctuation">.</span>forms<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span> 
+<span class="token comment">// 取得 name 属性为&quot;form2&quot;的表单</span>
+<span class="token keyword">let</span> myForm <span class="token operator">=</span> document<span class="token punctuation">.</span>forms<span class="token punctuation">[</span><span class="token string">&quot;form2&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre></div><h4 id="提交表单"><a href="#提交表单" class="header-anchor">#</a> 提交表单</h4> <p>input|button[type='submit'] 和 input[type='image'][src=xxx] 都表现为一个按钮，可以进行提交表单。</p> <p>当有提交按钮，且表单控件处于焦点时，按回车键也会触发提交表单。</p> <p>textarea 控件例外，按回车键会换行。且没有提交按钮的表单在按回车键时不会提交。</p> <p>表单在向服务器发送请求之前触发 submit 事件，可用于取消或验证表单。</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!-- 通用提交按钮 --&gt;</span> 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>submit<span class="token punctuation">&quot;</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Submit Form<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span> 
+<span class="token comment">&lt;!-- 自定义提交按钮 --&gt;</span> 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>submit<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Submit Form<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span> 
+<span class="token comment">&lt;!-- 图片按钮 --&gt;</span> 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>image<span class="token punctuation">&quot;</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>graphic.gif<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h4 id="重置表单"><a href="#重置表单" class="header-anchor">#</a> 重置表单</h4> <p>input|button[type='reset'] 都表现为一个按钮，可以进行重置表单。</p> <h4 id="表单字段"><a href="#表单字段" class="header-anchor">#</a> 表单字段</h4> <p>表单字段的属性</p> <ul><li>disabled<br>
+布尔值，表示表单字段是否禁用。</li> <li>form<br>
+指针，指向表单字段所属的表单。这个属性是只读的。</li> <li>name<br>
+字符串，这个字段的名字。</li> <li>readOnly<br>
+布尔值，表示这个字段是否只读。</li> <li>tabIndex<br>
+数值，表示这个字段在按 Tab 键时的切换顺序。</li> <li>type<br>
+字符串，表示字段类型，如&quot;checkbox&quot;、&quot;radio&quot;等。</li> <li>value<br>
+要提交给服务器的字段值。对文件输入字段来说，这个属性是只读的，仅包含计算机上
+某个文件的路径。</li></ul> <h5 id="表单字段的公共方法"><a href="#表单字段的公共方法" class="header-anchor">#</a> 表单字段的公共方法</h5> <p>focus 和 blur。</p> <p>focus() 方法把浏览器焦点设置到表单字段，这意味着该字段会变成活动字段并可以响应键盘事件。</p> <p>focus() 的反向操作是 blur()，其用于从元素上移除焦点</p> <h3 id="文本框"><a href="#文本框" class="header-anchor">#</a> 文本框</h3> <p>文本框为 input 和 textarea。</p> <h4 id="选择文本"><a href="#选择文本" class="header-anchor">#</a> 选择文本</h4> <p>文本框有 select() 方法，用于选中文本框的文本。且当选中文本框的文本时，会触发 select 事件。</p> <h4 id="获取所选文本"><a href="#获取所选文本" class="header-anchor">#</a> 获取所选文本</h4> <p>文本框有额外的属性 selectionStart 和 selectionEnd，用于截取选中的文本。</p> <div class="language-js extra-class"><pre class="language-js"><code>text<span class="token punctuation">.</span>value<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span>text<span class="token punctuation">.</span>selectionStart<span class="token punctuation">,</span> text<span class="token punctuation">.</span>selectionEnd<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h4 id="获取部分文本"><a href="#获取部分文本" class="header-anchor">#</a> 获取部分文本</h4> <p>setSelectionRange(start,end)
+从下标 0 开始，不含 end 下标，会触发 select 事件，选中部分文本。</p> <h3 id="输入过滤"><a href="#输入过滤" class="header-anchor">#</a> 输入过滤</h3> <p>当某些情况时，我们希望用户按下键盘时，输入框不响应。</p> <ul><li><p>keypress
+即在按下键盘时，在 keypress 事件中进行处理，调用 <code>event.preventDefault()</code> 使得有些输入不做响应。</p></li> <li><p>剪切板<br>
+即有复制、剪切、黏贴时触发的事件：</p> <ul><li>beforecopy：复制操作发生前触发，无法阻止 copy 事件。</li> <li>copy：复制操作发生时触发。</li> <li>beforecut：剪切操作发生前触发，无法阻止 cut 事件。</li> <li>cut：剪切操作发生时触发。</li> <li>beforepaste：粘贴操作发生前触发，无法阻止 paste 事件。</li> <li>paste：粘贴操作发生时触发。</li></ul></li></ul> <p>还可以直接获取剪贴板对象 clipboardData，通过 getData(MIME)、setData(MIME,text:String) 和 clearData 设置剪贴板的内容。</p> <h3 id="自动切换"><a href="#自动切换" class="header-anchor">#</a> 自动切换</h3> <p>在某些情况时，我们希望在输入足够长的文本后，自动切换表单控件。</p> <p>在每个文本框输入到最大允许字符数时，自动把焦点切换到下一个文本框。</p> <h3 id="表单约束"><a href="#表单约束" class="header-anchor">#</a> 表单约束</h3> <p>表单控件添加了属性使其更多约束，在某些约束不满足的情况下，无法提交表单。</p> <ul><li><p>required
+表示必填，否则无法提交表单。</p></li> <li><p>更多输入类型
+即 type 新增了 mail 和 url</p></li></ul> <h3 id="选择框编辑"><a href="#选择框编辑" class="header-anchor">#</a> 选择框编辑</h3> <p>即 select 和 option 标签，拥有表单标签的属性和方法，额外还有自己的方法和属性：</p> <ul><li>add(newOpt,relOpt) 添加新的 option，relOpt 表示在参考选项，新选项插在 relOpt 之前</li> <li>multiple 多选</li> <li>options 选择表单的所有选项</li> <li>remove(index) 移除某个 index</li> <li>selectedIndex 选中 option 的索引，若无选中则为 -1，若是多选的，也只会返回选中的第一项的索引，修改时移除所有已选项。</li> <li>size 显示几行，超过出现滚动条</li> <li>type 属性可能是 &quot;select-one&quot; 或 &quot;select-multiple&quot;</li></ul> <p>option 标签也有几个属性：</p> <ul><li>index 在众多 option 的排序</li> <li>label 标签</li> <li>selected 是否选中了当前选项，多选时不影响其他的选项</li> <li>text 选项的文本。</li> <li>value 选项的值</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> text <span class="token operator">=</span> selectbox<span class="token punctuation">.</span>options<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>text<span class="token punctuation">;</span> <span class="token comment">// 选项文本</span>
+<span class="token keyword">let</span> selectedOption <span class="token operator">=</span> selectbox<span class="token punctuation">.</span>options<span class="token punctuation">[</span>selectbox<span class="token punctuation">.</span>selectedIndex<span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// 获取单项选择框的选项</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Selected index: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>selectedOption<span class="token punctuation">.</span>index<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">\n</span><span class="token template-punctuation string">`</span></span> <span class="token operator">+</span> 
+ <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Selected text: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>selectedOption<span class="token punctuation">.</span>text<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">\n</span><span class="token template-punctuation string">`</span></span> <span class="token operator">+</span> 
+ <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">Selected value: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>selectedOption<span class="token punctuation">.</span>value<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h4 id="添加选项框"><a href="#添加选项框" class="header-anchor">#</a> 添加选项框</h4> <p>通过 document 和构造 Option 函数的方式创建 option 标签。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> option <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Option</span><span class="token punctuation">(</span><span class="token string">'text'</span><span class="token punctuation">,</span><span class="token string">'value'</span><span class="token punctuation">)</span>
+<span class="token keyword">let</span> option <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'option'</span><span class="token punctuation">)</span>
+option<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">createTextNode</span><span class="token punctuation">(</span><span class="token string">'text'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+option<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">'value'</span><span class="token punctuation">,</span><span class="token string">'value'</span><span class="token punctuation">)</span>
+</code></pre></div><h4 id="移除选项"><a href="#移除选项" class="header-anchor">#</a> 移除选项</h4> <ul><li>removeChild</li> <li>remove</li> <li>selectbox.options[0] = null</li></ul> <h4 id="移动和重新排列"><a href="#移动和重新排列" class="header-anchor">#</a> 移动和重新排列</h4> <h3 id="表单序列化"><a href="#表单序列化" class="header-anchor">#</a> 表单序列化</h3> <p>结合表单字段的 type 属性连同其 name 属性和 value 属性来进行序
+列化</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">serialize</span><span class="token punctuation">(</span><span class="token parameter">form</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> parts <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> optValue<span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> field <span class="token keyword">of</span> form<span class="token punctuation">.</span>elements<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// 表单中的所有项</span>
+        <span class="token keyword">switch</span> <span class="token punctuation">(</span>field<span class="token punctuation">.</span>type<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">case</span> <span class="token string">'select-one'</span><span class="token operator">:</span>
+            <span class="token keyword">case</span> <span class="token string">'select-multiple'</span><span class="token operator">:</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>field<span class="token punctuation">.</span>name<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// 有 name 属性</span>
+                    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> option <span class="token keyword">of</span> field<span class="token punctuation">.</span>options<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        <span class="token keyword">if</span> <span class="token punctuation">(</span>option<span class="token punctuation">.</span>selected<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                            <span class="token keyword">if</span> <span class="token punctuation">(</span>option<span class="token punctuation">.</span>hasAttribute<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// 若 option 有 value 属性则选择 value 否则是 text</span>
+                                optValue <span class="token operator">=</span> option<span class="token punctuation">.</span><span class="token function">hasAttribute</span><span class="token punctuation">(</span><span class="token string">'value'</span><span class="token punctuation">)</span> <span class="token operator">?</span> option<span class="token punctuation">.</span>value <span class="token operator">:</span> option<span class="token punctuation">.</span>text<span class="token punctuation">;</span>
+                            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                                optValue <span class="token operator">=</span> option<span class="token punctuation">.</span>attributes<span class="token punctuation">[</span><span class="token string">'value'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>specified <span class="token operator">?</span> option<span class="token punctuation">.</span>value <span class="token operator">:</span> option<span class="token punctuation">.</span>text<span class="token punctuation">;</span>
+                            <span class="token punctuation">}</span>
+                            parts<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token function">encodeURIComponent</span><span class="token punctuation">(</span>field<span class="token punctuation">.</span>name<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'='</span> <span class="token operator">+</span> <span class="token function">encodeURIComponent</span><span class="token punctuation">(</span>optValue<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                        <span class="token punctuation">}</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token keyword">case</span> <span class="token keyword">undefined</span><span class="token operator">:</span> <span class="token comment">// 字段集</span>
+            <span class="token keyword">case</span> <span class="token string">'file'</span><span class="token operator">:</span> <span class="token comment">// 文件输入</span>
+            <span class="token keyword">case</span> <span class="token string">'submit'</span><span class="token operator">:</span> <span class="token comment">// 提交按钮</span>
+            <span class="token keyword">case</span> <span class="token string">'reset'</span><span class="token operator">:</span> <span class="token comment">// 重置按钮</span>
+            <span class="token keyword">case</span> <span class="token string">'button'</span><span class="token operator">:</span> <span class="token comment">// 自定义按钮</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span> <span class="token comment">// 这些直接忽略</span>
+            <span class="token keyword">case</span> <span class="token string">'radio'</span><span class="token operator">:</span> <span class="token comment">// 单选按钮</span>
+            <span class="token keyword">case</span> <span class="token string">'checkbox'</span><span class="token operator">:</span> <span class="token comment">// 复选框</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>field<span class="token punctuation">.</span>checked<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token keyword">break</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token keyword">default</span><span class="token operator">:</span>
+                <span class="token comment">// 不包含没有名字的表单字段</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>field<span class="token punctuation">.</span>name<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    parts<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token function">encodeURIComponent</span><span class="token punctuation">(</span>field<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">=</span><span class="token template-punctuation string">`</span></span> <span class="token operator">+</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token function">encodeURIComponent</span><span class="token punctuation">(</span>field<span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> parts<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">'&amp;'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="富文本编辑"><a href="#富文本编辑" class="header-anchor">#</a> 富文本编辑</h3> <p>PS：富文本应该使用富文本编辑器的插件，本节只当了解。</p> <p>插入 iframe 元素，在文档 onload 事件中，将 iframe 的 designMode 属性设为 'on'，就可以在页面进行输入了。</p> <p>本质上是插入了一个完整的 html 文档，修改的是 body 元素。</p> <p>designMode 的取值为 'on' 和 'off'，默认为 'off'。</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iframe</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>richedit<span class="token punctuation">&quot;</span></span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token value css language-css"><span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span> <span class="token property">width</span><span class="token punctuation">:</span> 100px</span><span class="token punctuation">&quot;</span></span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>iframe</span><span class="token punctuation">&gt;</span></span> 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript"> 
+ window<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">&quot;load&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> 
+ frames<span class="token punctuation">[</span><span class="token string">&quot;richedit&quot;</span><span class="token punctuation">]</span><span class="token punctuation">.</span>document<span class="token punctuation">.</span>designMode <span class="token operator">=</span> <span class="token string">&quot;on&quot;</span><span class="token punctuation">;</span> 
+ <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h4 id="设置-contenteditable-属性"><a href="#设置-contenteditable-属性" class="header-anchor">#</a> 设置 contenteditable 属性</h4> <p>&quot;true&quot;表示开启，&quot;false&quot;表示关闭，&quot;inherit&quot;表示继承父元素的设置。</p> <p>任何元素都可以设置。</p> <h4 id="与富文本交互"><a href="#与富文本交互" class="header-anchor">#</a> 与富文本交互</h4> <p>即使用 JS 将富文本变得比较丰富，例如文本加粗，用户做不到。</p> <p>常使用 document.execCommand()</p> <p>参数为要执行的命令、表示浏览器是否为命令提供用户界面的布尔值、和执行命令必需的值。</p> <p>第二个参数一般是为 false。</p> <h4 id="富文本选择"><a href="#富文本选择" class="header-anchor">#</a> 富文本选择</h4> <p>在 iframe 中调用 getSelection 方法，返回一个 Selection 对象，拥有许多属性。</p> <h4 id="提交富文本"><a href="#提交富文本" class="header-anchor">#</a> 提交富文本</h4> <p>因为富文本和</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.caadd38c.js" defer></script><script src="/assets/js/2.2defd20b.js" defer></script><script src="/assets/js/26.f820b976.js" defer></script>
+  </body>
+</html>

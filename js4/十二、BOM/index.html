@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>十二、BOM(浏览器对象模型 Browser Object Model) | LYFFFF 的博客呀</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="./public/logo.webp">
+    <meta name="description" content="道阻且长，勤能补拙">
+    
+    <link rel="preload" href="/assets/css/0.styles.9825735b.css" as="style"><link rel="preload" href="/assets/js/app.caadd38c.js" as="script"><link rel="preload" href="/assets/js/2.2defd20b.js" as="script"><link rel="preload" href="/assets/js/27.bf356171.js" as="script"><link rel="prefetch" href="/assets/js/10.097aea1a.js"><link rel="prefetch" href="/assets/js/11.c2c5675c.js"><link rel="prefetch" href="/assets/js/12.c2622d7c.js"><link rel="prefetch" href="/assets/js/13.00665759.js"><link rel="prefetch" href="/assets/js/14.4659e7b2.js"><link rel="prefetch" href="/assets/js/15.c34835e2.js"><link rel="prefetch" href="/assets/js/16.1093532d.js"><link rel="prefetch" href="/assets/js/17.1fff1e75.js"><link rel="prefetch" href="/assets/js/18.9a84c05c.js"><link rel="prefetch" href="/assets/js/19.9837b8ba.js"><link rel="prefetch" href="/assets/js/20.0b8189fb.js"><link rel="prefetch" href="/assets/js/21.dc29329c.js"><link rel="prefetch" href="/assets/js/22.e4101b35.js"><link rel="prefetch" href="/assets/js/23.8a7bb0ad.js"><link rel="prefetch" href="/assets/js/24.01fb6d46.js"><link rel="prefetch" href="/assets/js/25.b102803a.js"><link rel="prefetch" href="/assets/js/26.f820b976.js"><link rel="prefetch" href="/assets/js/28.23d385bd.js"><link rel="prefetch" href="/assets/js/29.b57552f4.js"><link rel="prefetch" href="/assets/js/3.f9cd476e.js"><link rel="prefetch" href="/assets/js/30.eb70eecb.js"><link rel="prefetch" href="/assets/js/31.575e2c13.js"><link rel="prefetch" href="/assets/js/32.bce33679.js"><link rel="prefetch" href="/assets/js/33.0bd8f6cb.js"><link rel="prefetch" href="/assets/js/34.f33fa1b5.js"><link rel="prefetch" href="/assets/js/35.9cabab55.js"><link rel="prefetch" href="/assets/js/36.770a3e3f.js"><link rel="prefetch" href="/assets/js/37.d0599fe3.js"><link rel="prefetch" href="/assets/js/38.7099a479.js"><link rel="prefetch" href="/assets/js/39.e9ee67e8.js"><link rel="prefetch" href="/assets/js/4.11957e18.js"><link rel="prefetch" href="/assets/js/40.cc0ea31c.js"><link rel="prefetch" href="/assets/js/41.87e19d2c.js"><link rel="prefetch" href="/assets/js/42.ffa0b4fc.js"><link rel="prefetch" href="/assets/js/43.0c185241.js"><link rel="prefetch" href="/assets/js/5.e5b70a6f.js"><link rel="prefetch" href="/assets/js/6.4169e03e.js"><link rel="prefetch" href="/assets/js/7.c3602c94.js"><link rel="prefetch" href="/assets/js/8.ec3ff6fe.js"><link rel="prefetch" href="/assets/js/9.48df350d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9825735b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">LYFFFF 的博客呀</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Hmoe
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="笔记" class="dropdown-title"><span class="title">笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="笔记" class="mobile-dropdown-title"><span class="title">笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/note/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/note/正则表达式/" class="nav-link">
+  正则表达式
+</a></li><li class="dropdown-item"><!----> <a href="/note/客户端存储/" class="nav-link">
+  客户端存储
+</a></li><li class="dropdown-item"><!----> <a href="/note/模块化/" class="nav-link">
+  模块化
+</a></li><li class="dropdown-item"><!----> <a href="/note/渲染式组件/" class="nav-link">
+  渲染式组件
+</a></li><li class="dropdown-item"><!----> <a href="/note/原型和原型链/" class="nav-link">
+  原型和原型链
+</a></li><li class="dropdown-item"><!----> <a href="/note/组件传值/" class="nav-link">
+  组件传值
+</a></li><li class="dropdown-item"><!----> <a href="/note/Reflect/" class="nav-link">
+  Reflect
+</a></li><li class="dropdown-item"><!----> <a href="/note/Vue响应式原理/" class="nav-link">
+  Vue响应式原理
+</a></li><li class="dropdown-item"><!----> <a href="/note/VueRouter/" class="nav-link">
+  VueRouter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="源码分析" class="dropdown-title"><span class="title">源码分析</span> <span class="arrow down"></span></button> <button type="button" aria-label="源码分析" class="mobile-dropdown-title"><span class="title">源码分析</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/code/clusterize源码/" class="nav-link">
+  clusterize源码
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="js高级设计4" class="dropdown-title"><span class="title">js高级设计4</span> <span class="arrow down"></span></button> <button type="button" aria-label="js高级设计4" class="mobile-dropdown-title"><span class="title">js高级设计4</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/js4/二、javascript/" class="nav-link">
+  二、javascript
+</a></li><li class="dropdown-item"><!----> <a href="/js4/三、语言语法/" class="nav-link">
+  三、语言语法
+</a></li><li class="dropdown-item"><!----> <a href="/js4/四、变量作用域和内存/" class="nav-link">
+  四、变量作用域和内存
+</a></li><li class="dropdown-item"><!----> <a href="/js4/五、基本引用类型/" class="nav-link">
+  五、基本引用类型
+</a></li><li class="dropdown-item"><!----> <a href="/js4/六、集合引用类型/" class="nav-link">
+  六、集合引用类型
+</a></li><li class="dropdown-item"><!----> <a href="/js4/七、迭代器与生成器/" class="nav-link">
+  七、迭代器与生成器
+</a></li><li class="dropdown-item"><!----> <a href="/js4/八、类和对象以及面向对象编程/" class="nav-link">
+  八、类和对象以及面向对象编程
+</a></li><li class="dropdown-item"><!----> <a href="/js4/九、代理和反射/" class="nav-link">
+  九、代理和反射
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十、函数/" class="nav-link">
+  十、函数
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十一、期约和异步函数/" class="nav-link">
+  十一、期约和异步函数
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十二、BOM/" class="nav-link">
+  十二、BOM
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十三、客户端检测/" class="nav-link">
+  十三、客户端检测
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十四、DOM/" class="nav-link">
+  十四、DOM
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十五、DOM 扩展/" class="nav-link">
+  十五、DOM 扩展
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十六、DOM2 和 DOM3/" class="nav-link">
+  十六、DOM2 和 DOM3
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十七、事件/" class="nav-link">
+  十七、事件
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十八、图形与Canvas/" class="nav-link">
+  十八、图形与Canvas
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十九、表单脚本/" class="nav-link">
+  十九、表单脚本
+</a></li><li class="dropdown-item"><!----> <a href="/js4/二十、JavaScript API/" class="nav-link">
+  二十、JavaScript API
+</a></li><li class="dropdown-item"><!----> <a href="/js4/二十五、客户端储存/" class="nav-link">
+  二十五、客户端储存
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="关于" class="dropdown-title"><span class="title">关于</span> <span class="arrow down"></span></button> <button type="button" aria-label="关于" class="mobile-dropdown-title"><span class="title">关于</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/lyfffffff" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/LYFFFF_" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSND
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Hmoe
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="笔记" class="dropdown-title"><span class="title">笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="笔记" class="mobile-dropdown-title"><span class="title">笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/note/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/note/正则表达式/" class="nav-link">
+  正则表达式
+</a></li><li class="dropdown-item"><!----> <a href="/note/客户端存储/" class="nav-link">
+  客户端存储
+</a></li><li class="dropdown-item"><!----> <a href="/note/模块化/" class="nav-link">
+  模块化
+</a></li><li class="dropdown-item"><!----> <a href="/note/渲染式组件/" class="nav-link">
+  渲染式组件
+</a></li><li class="dropdown-item"><!----> <a href="/note/原型和原型链/" class="nav-link">
+  原型和原型链
+</a></li><li class="dropdown-item"><!----> <a href="/note/组件传值/" class="nav-link">
+  组件传值
+</a></li><li class="dropdown-item"><!----> <a href="/note/Reflect/" class="nav-link">
+  Reflect
+</a></li><li class="dropdown-item"><!----> <a href="/note/Vue响应式原理/" class="nav-link">
+  Vue响应式原理
+</a></li><li class="dropdown-item"><!----> <a href="/note/VueRouter/" class="nav-link">
+  VueRouter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="源码分析" class="dropdown-title"><span class="title">源码分析</span> <span class="arrow down"></span></button> <button type="button" aria-label="源码分析" class="mobile-dropdown-title"><span class="title">源码分析</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/code/clusterize源码/" class="nav-link">
+  clusterize源码
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="js高级设计4" class="dropdown-title"><span class="title">js高级设计4</span> <span class="arrow down"></span></button> <button type="button" aria-label="js高级设计4" class="mobile-dropdown-title"><span class="title">js高级设计4</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/js4/二、javascript/" class="nav-link">
+  二、javascript
+</a></li><li class="dropdown-item"><!----> <a href="/js4/三、语言语法/" class="nav-link">
+  三、语言语法
+</a></li><li class="dropdown-item"><!----> <a href="/js4/四、变量作用域和内存/" class="nav-link">
+  四、变量作用域和内存
+</a></li><li class="dropdown-item"><!----> <a href="/js4/五、基本引用类型/" class="nav-link">
+  五、基本引用类型
+</a></li><li class="dropdown-item"><!----> <a href="/js4/六、集合引用类型/" class="nav-link">
+  六、集合引用类型
+</a></li><li class="dropdown-item"><!----> <a href="/js4/七、迭代器与生成器/" class="nav-link">
+  七、迭代器与生成器
+</a></li><li class="dropdown-item"><!----> <a href="/js4/八、类和对象以及面向对象编程/" class="nav-link">
+  八、类和对象以及面向对象编程
+</a></li><li class="dropdown-item"><!----> <a href="/js4/九、代理和反射/" class="nav-link">
+  九、代理和反射
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十、函数/" class="nav-link">
+  十、函数
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十一、期约和异步函数/" class="nav-link">
+  十一、期约和异步函数
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十二、BOM/" class="nav-link">
+  十二、BOM
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十三、客户端检测/" class="nav-link">
+  十三、客户端检测
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十四、DOM/" class="nav-link">
+  十四、DOM
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十五、DOM 扩展/" class="nav-link">
+  十五、DOM 扩展
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十六、DOM2 和 DOM3/" class="nav-link">
+  十六、DOM2 和 DOM3
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十七、事件/" class="nav-link">
+  十七、事件
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十八、图形与Canvas/" class="nav-link">
+  十八、图形与Canvas
+</a></li><li class="dropdown-item"><!----> <a href="/js4/十九、表单脚本/" class="nav-link">
+  十九、表单脚本
+</a></li><li class="dropdown-item"><!----> <a href="/js4/二十、JavaScript API/" class="nav-link">
+  二十、JavaScript API
+</a></li><li class="dropdown-item"><!----> <a href="/js4/二十五、客户端储存/" class="nav-link">
+  二十五、客户端储存
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="关于" class="dropdown-title"><span class="title">关于</span> <span class="arrow down"></span></button> <button type="button" aria-label="关于" class="mobile-dropdown-title"><span class="title">关于</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/lyfffffff" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/LYFFFF_" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSND
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/js4/%E5%8D%81%E4%BA%8C%E3%80%81BOM/" aria-current="page" class="active sidebar-link">十二、BOM</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/js4/%E5%8D%81%E4%BA%8C%E3%80%81BOM/#十二、bom-浏览器对象模型-browser-object-model" class="sidebar-link">十二、BOM(浏览器对象模型 Browser Object Model)</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="十二、bom-浏览器对象模型-browser-object-model"><a href="#十二、bom-浏览器对象模型-browser-object-model" class="header-anchor">#</a> 十二、BOM(浏览器对象模型 Browser Object Model)</h2> <p>介绍了几个浏览器对象，window 中视口表示页面，窗口表示浏览器。</p> <h3 id="window-对象"><a href="#window-对象" class="header-anchor">#</a> window 对象</h3> <p>为浏览器实例，内部的全局方法调用时可以省略 window. 前缀。</p> <p>例如 window.parseInt == parseInt，作为 ECMAScript 的 Global 对象，使用 var 声明的变量，会被提升到 window 对象中。</p> <p>window 常用来操作浏览器窗口，还有一些工具属性/方法(定时器)，还有弹出对话框</p> <h4 id="窗口关系-窗口与窗口"><a href="#窗口关系-窗口与窗口" class="header-anchor">#</a> 窗口关系(窗口与窗口)</h4> <ul><li><p>top 对象
+表示最上层窗口，即浏览器本身，故 top == window</p></li> <li><p>parent 对象
+表示当前窗口的父窗口，若当前窗口就是最上层窗口 top == parent</p></li> <li><p>self 对象
+指向 window 对象，即 self == window</p></li></ul> <h4 id="窗口位置-窗口与屏幕"><a href="#窗口位置-窗口与屏幕" class="header-anchor">#</a> 窗口位置(窗口与屏幕)</h4> <ul><li><p>window.screenLeft/screenTop
+属性，返回当前浏览器离屏幕的距离</p></li> <li><p>window.moveTo(x，y)/moveBy(x，y)
+moveTo 表示窗口移动到坐标(x，y)，但好像没有用。
+moveBy 表示相对于当前位置，窗口移动 xy 距离，正负代表上下左右</p></li> <li><p>window.devicePixelRatio 像素比
+物理像素(DP，设备像素，device pixels)，屏幕是由一个个小的像素块组成的，控制像素块颜色可以出现图像和动画，但是每个小像素块的大小和个数都是物理固定的。
+css 像素是一个相对的长度单位，在同一个设备/不同的设备中，1px 所代表的物理像素是变化的，例如分辨率高的，一个物理像素小，需多占几个物理像素，分辨率低的，少占几个物理像素，最终显示的大小一样，但是清晰度会有所不同。
+控制像素比的属性为 window.devicePixelRatio，表示物理像素与逻辑像素之间的缩放系数。</p></li></ul> <h4 id="窗口大小"><a href="#窗口大小" class="header-anchor">#</a> 窗口大小</h4> <ul><li><p>screen.width/height
+表示屏幕分辨率，不会变</p></li> <li><p>innerWidth/innerHeight
+当前可视窗口(即页面)的大小，若工具栏遮挡，也改变大小</p></li> <li><p>outerWidth/outerHeight
+返回浏览器窗口自身大小</p></li> <li><p>document.documentElement.clientWidth
+同样返回可视窗口的大小，若工具栏遮挡，也改变大小</p> <ul><li>document.documentElement.clientWidth 和 innerWidth 的区别</li> <li>前者属于 DOM，后者属于 BOM</li> <li>前者不包括滚动条宽度，后者包括滚动条宽度，故后者 = 前者 || 前者+17px(滚动条宽度)</li></ul></li> <li><p>window.resizeTo(x，y)/resizeBy(x，y)
+方法，前者表示将窗口缩放到 x-y 大小，后者表示基于当前宽高，调整 x-y</p></li></ul> <h4 id="视口位置-页面与窗口"><a href="#视口位置-页面与窗口" class="header-anchor">#</a> 视口位置(页面与窗口)</h4> <ul><li><p>window.pageXoffset/pageYoffset 和 window.scrollX/scrollY
+表示滚动距离，即现在显示的最顶端离页面最顶端的距离，二者相等</p></li> <li><p>window.scrollBy(x，y)/scrollTo(x，y)/scroll(x，y)
+方法，前者表示基于当前坐标滚动 x-y 距离，后两者表示滚动到某坐标。
+三个方法参数可替换为一个对象，属性为 left/top/behavior，其中 behavior 表示移动效果，值为 auto(自动)/smooth(匀速)</p></li></ul> <div class="language-js extra-class"><pre class="language-js"><code>window<span class="token punctuation">.</span><span class="token function">scroll</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">left</span><span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span> <span class="token comment">// 离左端 100px</span>
+  <span class="token literal-property property">top</span><span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span> <span class="token comment">// 离顶端 100px</span>
+  <span class="token literal-property property">behavior</span><span class="token operator">:</span> smooth<span class="token punctuation">,</span> <span class="token comment">// 匀速</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><table><thead><tr><th>window 属性</th> <th>概念</th></tr></thead> <tbody><tr><td>window.screenLeft/screenRight</td> <td>窗口距离屏幕左顶点的距离</td></tr> <tr><td>screen.width/height</td> <td>屏幕分辨率</td></tr> <tr><td>window.innerWidth/innerHeight</td> <td>视口大小</td></tr> <tr><td>document.documentElement.clientWidth</td> <td>视口大小</td></tr> <tr><td>window.outerWidth/outerHeight</td> <td>窗口大小</td></tr> <tr><td>window.pageXOffset/pageYOffset</td> <td>视口滚动距离</td></tr></tbody></table> <table><thead><tr><th>window 方法</th> <th>概念</th></tr></thead> <tbody><tr><td>window.moveTo(x，y)</td> <td>将窗口移动到离屏幕的 x-y 坐标</td></tr> <tr><td>window.moveBy(x，y)</td> <td>基于现在坐标水平移动 x，垂直移动 y</td></tr> <tr><td>window.resizeTo(x，y)</td> <td>将窗口缩放到 x-y 大小</td></tr> <tr><td>window.resizeBy(x，y)</td> <td>基于窗口大小，将窗口水平缩放 x，垂直缩放 y</td></tr> <tr><td>window.scroll(x.y)/scroll({left:, right:, behavior:})</td> <td>滚动到 left/right 坐标</td></tr> <tr><td>window.scrollTo(x.y)/scrollTo({left:, top:, behavior:})</td> <td>滚动到 left/top 坐标</td></tr> <tr><td>window.scrollBy(x.y)/scrollBy({left:, top:, behavior:})</td> <td>向下滚动 top 位置，向左滚动到 left 位置</td></tr></tbody></table> <h4 id="导航与打开新窗口"><a href="#导航与打开新窗口" class="header-anchor">#</a> 导航与打开新窗口</h4> <ul><li>window.open(url，targetWindow，data，isReplaceNowPage)
+返回一个 window 对象，这个 window 指向被打开的浏览器，所有方法也通用。可以使用 window.close()关闭
+<ul><li><p>url url 地址，为地址字符串</p></li> <li><p>targetWindow 为窗口名字字符串，所指向的 url 将会在此窗口打开(等同于 a 标签的 target，可为 frame 标签，可选项也相同，比如_self、_parent、_top 或_blank。)，若不存在这样的窗口，则新打开一个窗口，并将窗口命名为 targetWindow</p></li> <li><p>data 字符串，形如'attributes_1=xxx，attributes_2=xxx，attributes_3=xxx', 当 url 在新窗口打开时有效，常用属性值如下表</p> <table><thead><tr><th>属性</th> <th>值</th> <th>说明</th></tr></thead> <tbody><tr><td>height/width</td> <td>数值</td> <td>新窗高度/宽度</td></tr> <tr><td>left/top</td> <td>数值</td> <td>窗口距离屏幕的 x-y 坐标，非负</td></tr> <tr><td>resizeable</td> <td>yes/no</td> <td>是否可以改变窗口大小，接下来都好像没啥用</td></tr> <tr><td>Menubar</td> <td>yes/no</td> <td>是否显示菜单栏</td></tr> <tr><td>scrollbars</td> <td>yes/no</td> <td>是否显示滚动栏</td></tr> <tr><td>status</td> <td>yes/no</td> <td>是否显示状态栏</td></tr> <tr><td>toolbar</td> <td>yes/no</td> <td>是否显示工具栏</td></tr></tbody></table></li></ul></li></ul> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://www.baidu.com<span class="token punctuation">&quot;</span></span> <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>myFrame<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+ <span class="token comment">&lt;!--等价于 window.open(&quot;http://www.baidu.com&quot;, &quot;myFrame&quot;);--&gt;</span>
+</code></pre></div><h4 id="系统对话框"><a href="#系统对话框" class="header-anchor">#</a> 系统对话框</h4> <p>无关视口和 html，是浏览器自带的，常用的有 alert(mes)、confirm(mes)、prompt(mes)。</p> <p>alert(mes)只接收一个参数，在警告框中显示，只有一个确认按钮。</p> <p>confirm(mes)为确认框，有取消和确认两个选项，根据选择返回 true/false。</p> <p>prompt(mes，input)为提示框，mes 为文字提示，参数 input 表示在输入框中的默认值，可不传，为空字符串，点击确认时将文本框内的值返回，点击取消时返回 null</p> <h3 id="location-对象"><a href="#location-对象" class="header-anchor">#</a> location 对象</h3> <p>即是 window 对象的属性，也是 document 对象的属性，即 window.location == document.location。</p> <p>location 对象保存了当前文档的信息，也保存了当前页面 URL 的信息。</p> <h4 id="解析-url-字符串"><a href="#解析-url-字符串" class="header-anchor">#</a> 解析 URL 字符串</h4> <p>协议://用户名:密码@域名:端口/路径?查询参数#锚点</p> <p>protocol://username:password@host:port/path?query#hash</p> <p>对于例子：'http://foouser:barpassword@www.wrox.com:80/WileyCDA/?q=javascript#contents'。</p> <p>location 可以找出所有信息。</p> <table><thead><tr><th>location 的 url 属性</th> <th>作用</th></tr></thead> <tbody><tr><td>location.hash</td> <td>锚点，用于定位页面，'#contents'</td></tr> <tr><td>location.host</td> <td>服务器和端口名， 'www.wrox.com:80'</td></tr> <tr><td>location.hostname</td> <td>服务器名， 'www.wrox.com'</td></tr> <tr><td>location.href</td> <td>完整 url</td></tr> <tr><td>location.pathname</td> <td>路径名称，'/WileyCDA/'</td></tr> <tr><td>location.port</td> <td>端口名，'80'</td></tr> <tr><td>location.protocol</td> <td>协议名，'http:'</td></tr> <tr><td>location.search</td> <td>查询参数，'?q=javascript'</td></tr> <tr><td>location.username</td> <td>域名钱的用户名，'foouser'</td></tr> <tr><td>location.password</td> <td>域名前的密码，'barpassword'</td></tr> <tr><td>location.origin</td> <td>源地址，'http://www.wrox.com'</td></tr></tbody></table> <h4 id="查询字符串解析"><a href="#查询字符串解析" class="header-anchor">#</a> 查询字符串解析</h4> <p>使用 location.search 获取的字符串形如：qs = '?name=value&amp;name=value'。</p> <p>可以实例化 URLSearchParams(qs)方法解析查询字符串，返回一个实例，有 toString/get/set/delete 等方法</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> qs <span class="token operator">=</span> <span class="token string">&quot;?name=lyf&amp;age=18&amp;height=165&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> search <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">URLSearchParams</span><span class="token punctuation">(</span>qs<span class="token punctuation">)</span><span class="token punctuation">;</span>
+search<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// '?name=lyf&amp;age=18&amp;height=165'</span>
+serach<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">&quot;name&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 'name'</span>
+search<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">&quot;grade&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;2&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+search<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// '?name=lyf&amp;age=18&amp;height=165&amp;grade=2'</span>
+search<span class="token punctuation">.</span><span class="token function">delete</span><span class="token punctuation">(</span><span class="token string">&quot;age&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// '?name=lyf&amp;height=165&amp;grade=2'</span>
+</code></pre></div><h4 id="操作地址"><a href="#操作地址" class="header-anchor">#</a> 操作地址</h4> <p>设置 window.location、location.href 和调用 location.assign(url)，都可以修改当前浏览器的地址，并可在历史记录中回退</p> <h3 id="navigator-对象"><a href="#navigator-对象" class="header-anchor">#</a> navigator 对象</h3> <p>用来了解当前浏览器，不是 window 位置向，而是硬件数值上。</p> <h3 id="screen-对象"><a href="#screen-对象" class="header-anchor">#</a> screen 对象</h3> <p>屏幕数据</p> <h3 id="history-对象"><a href="#history-对象" class="header-anchor">#</a> history 对象</h3> <p>查询导航历史，并进行前进后退。</p> <ul><li>history.go(num)
+表示基于当前页面，前进/后退 num 页，前进后退取决于 num 的正负</li> <li>history.back(num)
+表示回退 num 页</li> <li>history.forward(num)
+表示前进 num 页</li></ul> <h4 id="历史状态管理"><a href="#历史状态管理" class="header-anchor">#</a> 历史状态管理</h4> <p>改变 url 地址，默认去到新页面，触发 hashchange 事件，修改页面信息。</p> <p>执行 pushState()方法后，新的状态信息会被加入到历史状态栈中，浏览器地址栏也会改变，但浏览器并不会真的向服务器发送请求，除了 location 相关属性依赖于 url，故会修改。</p> <ul><li>history.pushState(stateObj，title，url)
+<ul><li>stateObj 状态对象</li> <li>title 新页面的标题，现在也无法实现</li> <li>url 修改端口后的路径</li></ul></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.caadd38c.js" defer></script><script src="/assets/js/2.2defd20b.js" defer></script><script src="/assets/js/27.bf356171.js" defer></script>
+  </body>
+</html>
