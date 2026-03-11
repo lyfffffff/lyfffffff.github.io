@@ -1,5 +1,12 @@
 import { defineConfig } from 'vitepress'
 import UnoCSS from '@unocss/vite'
+import { readFileSync } from 'fs'
+import { resolve, dirname } from 'path'
+import { fileURLToPath } from 'url'
+
+const __dirname = dirname(fileURLToPath(import.meta.url))
+const juejinSvg = readFileSync(resolve(__dirname, '../public/juejin.svg'), 'utf-8')
+const csdnSvg = readFileSync(resolve(__dirname, '../public/csdn.svg'), 'utf-8')
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -47,9 +54,19 @@ export default defineConfig({
       ],
     },
 
-    // 社交链接
+    // 社交链接（请将链接替换为你的个人主页）
     socialLinks: [
       { icon: 'github', link: 'https://github.com/lyfffffff' },
+      {
+        icon: { svg: juejinSvg },
+        link: 'https://juejin.cn/user/171977275610190',
+        ariaLabel: '掘金',
+      },
+      {
+        icon: { svg: csdnSvg },
+        link: 'https://blog.csdn.net/LYFFFF_?spm=1000.2115.3001.5343',
+        ariaLabel: 'CSDN',
+      },
     ],
 
     // 暗色模式

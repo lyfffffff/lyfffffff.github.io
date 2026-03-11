@@ -23,3 +23,15 @@
 |------|------|------|
 | Bilibili | https://www.bilibili.com | 各类技术视频 |
 | YouTube | https://www.youtube.com | 英文技术教程 |
+
+## 前端咨询
+| 名称 | 链接 | 说明 |
+|------|------|------|
+| 前端技术文章 | https://fed.chanceyu.com | 前端咨询 |
+
+## 常用工具
+| 名称 | 链接 | 说明 |
+|------|------|------|
+| Photopea | https://www.photopea.com/ | 在线图片剪辑工具 |
+| 代码片段 | https://snippet-generator.app/?description=&tabtrigger=&snippet=&mode=vscode | 将代码转为代码片段 |
+| SEE图床 | https://s.ee | 将图片托管到云且国内可以访问 |
