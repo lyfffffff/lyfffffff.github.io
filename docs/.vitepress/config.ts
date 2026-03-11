@@ -1,54 +1,62 @@
-import { defineConfig } from 'vitepress'
-import UnoCSS from '@unocss/vite'
-import { readFileSync } from 'fs'
-import { resolve, dirname } from 'path'
-import { fileURLToPath } from 'url'
+import { defineConfig } from "vitepress";
+import UnoCSS from "@unocss/vite";
+import { readFileSync } from "fs";
+import { resolve, dirname } from "path";
+import { fileURLToPath } from "url";
 
-const __dirname = dirname(fileURLToPath(import.meta.url))
-const juejinSvg = readFileSync(resolve(__dirname, '../public/juejin.svg'), 'utf-8')
-const csdnSvg = readFileSync(resolve(__dirname, '../public/csdn.svg'), 'utf-8')
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
+// 让主题使用项目内的 posts 数据（解决只显示一篇文章的问题）
+const postsDataPath = resolve(__dirname, "posts.data.ts");
+const juejinSvg = readFileSync(
+  resolve(__dirname, "../public/juejin.svg"),
+  "utf-8",
+);
+const csdnSvg = readFileSync(resolve(__dirname, "../public/csdn.svg"), "utf-8");
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: 'LYFFFF的博客',
-  description: '记录生活，记录学习，记录成长',
-  lang: 'zh-CN',
+  title: "LYFFFF的博客",
+  description: "记录生活，记录学习，记录成长",
+  lang: "zh-CN",
 
   // 部署到 lyfffffff.github.io（用户站点，根路径）
-  base: '/',
+  base: "/",
+
+  head: [["link", { rel: "stylesheet", href: "/custom-blog.css" }]],
 
   themeConfig: {
-    logo: '/logo.svg',
+    logo: "/logo.svg",
 
     nav: [
-      { text: '首页', link: '/' },
-      { text: '笔记', link: '/notes/' },
-      { text: '工具', link: '/tools/' },
-      { text: '博客', link: '/blog' },
-      { text: '关于', link: '/about' },
+      { text: "首页", link: "/" },
+      { text: "笔记", link: "/notes/" },
+      { text: "工具", link: "/tools/" },
+      { text: "博客", link: "/blog" },
+      { text: "关于", link: "/about" },
     ],
 
     // 侧边栏
     sidebar: {
-      '/notes/': [
+      "/notes/": [
         {
-          text: 'Notes',
+          text: "Notes",
           items: [
-            { text: '概览', link: '/notes/' },
-            { text: 'JavaScript', link: '/notes/javascript' },
-            { text: 'CSS', link: '/notes/css' },
-            { text: 'Linux', link: '/notes/linux' },
+            { text: "概览", link: "/notes/" },
+            { text: "JavaScript", link: "/notes/javascript" },
+            { text: "CSS", link: "/notes/css" },
+            { text: "Linux", link: "/notes/linux" },
           ],
         },
       ],
-      '/tools/': [
+      "/tools/": [
         {
-          text: 'Tools',
+          text: "Tools",
           items: [
-            { text: '概览', link: '/tools/' },
-            { text: 'AI Tools', link: '/tools/ai-tools' },
-            { text: 'Developer Tools', link: '/tools/dev-tools' },
-            { text: 'Learning Resources', link: '/tools/learning-resources' },
+            { text: "概览", link: "/tools/" },
+            { text: "AI Tools", link: "/tools/ai-tools" },
+            { text: "Developer Tools", link: "/tools/dev-tools" },
+            { text: "Learning Resources", link: "/tools/learning-resources" },
           ],
         },
       ],
@@ -56,16 +64,16 @@ export default defineConfig({
 
     // 社交链接（请将链接替换为你的个人主页）
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/lyfffffff' },
+      { icon: "github", link: "https://github.com/lyfffffff" },
       {
         icon: { svg: juejinSvg },
-        link: 'https://juejin.cn/user/171977275610190',
-        ariaLabel: '掘金',
+        link: "https://juejin.cn/user/171977275610190",
+        ariaLabel: "掘金",
       },
       {
         icon: { svg: csdnSvg },
-        link: 'https://blog.csdn.net/LYFFFF_?spm=1000.2115.3001.5343',
-        ariaLabel: 'CSDN',
+        link: "https://blog.csdn.net/LYFFFF_?spm=1000.2115.3001.5343",
+        ariaLabel: "CSDN",
       },
     ],
 
@@ -74,26 +82,42 @@ export default defineConfig({
 
     // 页脚
     footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2025',
+      message: "Released under the MIT License.",
+      copyright: "Copyright © 2025",
     },
 
     // 编辑链接
     editLink: {
-      pattern: 'https://github.com/lyfffffff/lyfffffff.github.io/edit/master/docs/:path',
-      text: 'Edit this page on GitHub',
+      pattern:
+        "https://github.com/lyfffffff/lyfffffff.github.io/edit/master/docs/:path",
+      text: "Edit this page on GitHub",
     },
 
     // 搜索
     search: {
-      provider: 'local',
+      provider: "local",
+    },
+
+    blog: {
+      pagesize: 10, // 每页文章数
+      category: false, // 显式开启分类
+      tag: false, // 显式开启标签
+      activityGraph: false, // 显式开启那个类似 GitHub 的更新状态图
     },
   },
 
   vite: {
     plugins: [UnoCSS()],
     ssr: {
-      noExternal: ['vitepress-theme-open17', 'vitepress-velonor'],
+      noExternal: ["vitepress-theme-open17", "vitepress-velonor"],
+    },
+    resolve: {
+      alias: [
+        {
+          find: "vitepress-theme-open17/src/posts.data.js",
+          replacement: postsDataPath,
+        },
+      ],
     },
   },
-})
+});

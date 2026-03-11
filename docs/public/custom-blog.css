@@ -1,0 +1,12 @@
+/**
+ * 博客卡片统一高度 - 通过 config head 引入
+ */
+a.w-full.rounded-2xl[href*="posts"] > div {
+  min-height: 280px;
+}
+a.w-full.rounded-2xl[href*="posts"] .text-sm.leading-relaxed.opacity-80 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
