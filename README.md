@@ -130,6 +130,7 @@ npm run docs:preview
 - **侧边栏**：修改 `themeConfig.sidebar`
 - **社交链接**：修改 `themeConfig.socialLinks`，将 `lyfffffff` 替换为你的 GitHub 用户名
 
-## License
-
-MIT
+## 导入其他软件的笔记
+1、在软件笔记中导出所有笔记
+2、将笔记放置到 `raw_notes` 中
+3、运行脚本 `node transform.js` 将笔记转化并自动导入到 `docs/posts/` 下

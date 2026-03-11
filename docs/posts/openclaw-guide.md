@@ -1,12 +1,10 @@
 ---
 title: OpenClaw 使用指南：开源个人 AI 助手
 date: 2025-03-10
+category: 工具使用
 tags:
   - OpenClaw
   - AI
-  - 自动化
-  - 开源
-  - Windows
 desc: 介绍 OpenClaw 的安装、配置与核心功能，打造你的个人 AI 助手。含 Windows 保姆级安装教程。
 ---
 

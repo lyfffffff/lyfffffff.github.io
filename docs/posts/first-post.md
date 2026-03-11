@@ -2,8 +2,6 @@
 title: 我的第一篇博客
 date: 2025-03-10
 tags:
-  - hello
-  - vitepress
   - 博客
 desc: 欢迎来到我的个人博客，这里将记录我的学习笔记、技术分享和有用工具。
 pin: true

@@ -1,11 +1,11 @@
 ---
 title: Cursor 使用指南：AI 驱动的代码编辑器入门
 date: 2025-03-10
+category: 工具使用
 tags:
   - Cursor
-  - AI
   - 编程工具
-  - 效率
+  - AI
 desc: 介绍 Cursor 编辑器的核心功能与使用技巧，帮助你用 AI 提升编程效率。
 ---
 
