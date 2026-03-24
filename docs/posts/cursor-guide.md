@@ -121,6 +121,24 @@ Composer 支持跨文件编辑，适合：
 2. **网络**：需要稳定网络访问 AI 服务
 3. **验证结果**：AI 生成的代码要自己审查和测试后再使用
 
+## cursor中的skills
+
+| 分类                | 存放位置                |
+| ------------------- | ----------------------- |
+| 全局skills          | ~.cursor/skills         |
+| 当前项目下的 skills | 当前项目/.cursor/skills |
+
+### 安装skills
+
+[skills.sh](https://skills.sh)
+
+```bash
+// 安装 skills制造 skills 
+npx skills add https://github.com/vercel-labs/agent-browser --skill skill-creator
+```
+
+直接在热门skills网站中搜索 skills 并复制安装命令，安装时选择 cladue-code或opencalw，cursor 都可以支持读取
+
 ## 小结
 
 Cursor 适合日常开发、学习与探索新项目。熟练使用 Chat、Composer 和行内编辑，可以明显提升编码效率。建议从简单任务开始，逐步尝试更复杂的多文件编辑和重构场景。
